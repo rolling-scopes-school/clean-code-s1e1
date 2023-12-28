@@ -44,19 +44,19 @@
 }
 
 .task-list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .list-item,
 .task-title {
-  list-style:none;
+  list-style: none;
 }
 
 .button, 
 .list-item__checkbox, 
 .list-item__text{
-  outline:none;
+  outline: none;
 }
 
 .button {
@@ -90,7 +90,7 @@
 .add-task__input {
   margin: 0;
   font-size: 18px;
-  line-height:8p 1x;
+  line-height: 8p 1x;
   height: 21px;
   padding: 0 9px;
   border: 1px solid #ddd;
@@ -165,14 +165,14 @@
   /* Edit Task */
 
 .list-item__text {
-  display:none
+  display: none
 }
   
 .edit-tasks__input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
   
 .edit-tasks__label {
-  display:none;
+  display: none;
 }
