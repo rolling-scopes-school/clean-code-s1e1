@@ -151,7 +151,8 @@
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-  .list-item__button-img:hover {
+
+.list-item__button-img:hover {
   transform: rotateZ(0);
 }
   
