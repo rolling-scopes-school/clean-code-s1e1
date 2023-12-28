@@ -5,24 +5,23 @@
   font-family: Lato, sans-serif;
 }
 
-.matrix-container {
+.header-container {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.matrix-container__img {
+.header-container__img {
   width: 100%;
 }
 
-.matrix-container,
-.matrix-container__more-info {
+.header-container__more-info {
   font-family: fantasy, cursive;
 }
   
 @media (max-width:768px) {
-  .matrix-container {
+  .header-container {
     text-align: center;
   }
 }
@@ -33,7 +32,9 @@
   margin: 0 auto 0;
 }
 
-.task {
+.add-task__input,
+.list-item__title,
+.list-item__text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -43,13 +44,13 @@
   display: flex;
 }
 
-.task-list {
+.todo-task__list,
+.completed-tasks__list {
   margin: 0;
   padding: 0px;
 }
 
-.list-item,
-.task-title {
+.list-item {
   list-style: none;
 }
 
