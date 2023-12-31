@@ -13,7 +13,7 @@
 .header__img {
     width: 100%;
 }
-.header .header__link {
+.header__link {
     font-family: fantasy, cursive;
 }
 
@@ -26,7 +26,7 @@
     display: block;
     width: 500px;
     margin: 0 auto 0;
-}
+} 
 .task__label,
 .input__text {
     width: 56%;
@@ -40,10 +40,12 @@ ul {
     margin: 0;
     padding: 0px;
 }
-li, h3 {
+li,
+h3 {
     list-style: none;
 }
-input,.btn{
+input,
+button {
     outline: none;
 }
 .btn {
