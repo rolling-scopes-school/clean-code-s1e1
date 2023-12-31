@@ -33,7 +33,7 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className='task__label';
+    label.className="task__label";
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -45,7 +45,7 @@ var createNewTaskElement=function(taskString){
     editButton.className = "task__btn--edit btn";
 
     deleteButton.className="task__btn--delete btn";
-    deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.src="./remove.svg";
     deleteButtonImg.className = "task__remove-img";
     deleteButton.appendChild(deleteButtonImg);
 
@@ -79,7 +79,7 @@ var addTask=function(){
 
 var editTask=function(){
     console.log("Edit Task...");
-    console.log("Change 'edit' to 'save'");
+    console.log("Change "edit" to "save"");
 
 
     var listItem=this.parentNode;
@@ -190,7 +190,7 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
 
 
 
-// Issues with usability don't get seen until they are in front of a human tester.
+// Issues with usability don"t get seen until they are in front of a human tester.
 
 //prevent creation of empty tasks.
 
