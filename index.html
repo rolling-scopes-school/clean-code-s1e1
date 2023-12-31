@@ -13,8 +13,8 @@
 <main class="main">
     <section id='add-tasks__section'>
         <h3 class="add-tasks__title task__title">Add Item</h3>
-        <div class="task-row-wrapper">
-            <input id='new-task'class="add-tasks__input input__text" type="text">
+        <div class="add-tasks__wrapper">
+            <input class="add-tasks__input input__text" type="text">
             <button class="btn">Add</button>
         </div>
 </section>
@@ -25,8 +25,8 @@
         <input class="input__checkbox" type='checkbox'>
         <label class="task__label">Pay Bills</label>
         <input type="text" class="input__text">
-        <button class="edit btn">Edit</button>
-        <button class="delete btn">
+        <button class="task__btn--edit btn">Edit</button>
+        <button class="task__btn--delete btn">
             <img class="task__remove-img" src="./remove.svg" alt="remove icon">
         </button>
     </li>
@@ -34,8 +34,8 @@
         <input class="input__checkbox" type="checkbox">
         <label class="task__label">Go Shopping</label>
         <input type="text" value="Go Shopping" class="input__text">
-        <button class='edit btn'>Save</button>
-        <button class="delete btn">
+        <button class='task__btn--edit btn'>Save</button>
+        <button class="task__btn--delete btn">
             <img class="task__remove-img" src="./remove.svg" alt="remove icon">
         </button>
     </li>
@@ -43,13 +43,13 @@
 </section>
 <section>
     <h3 class="task__title">Completed</h3>
-    <ul id="completed-tasks">
+    <ul id="task__list--completed">
         <li class="task__item">
             <input class="input__checkbox" type="checkbox" checked>
             <label class="task__label">See the Doctor</label>
             <input type="text" class="input__text">
-            <button class="edit btn">Edit</button>
-            <button class="delete btn">
+            <button class="task__btn--edit btn">Edit</button>
+            <button class="task__btn--delete btn">
                 <img class="task__remove-img" src="./remove.svg" alt="remove icon">
             </button>
     </li>
