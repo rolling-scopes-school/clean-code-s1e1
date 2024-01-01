@@ -60,7 +60,6 @@ var createNewTaskElement=function(taskString){
 }
 
 
-
 var addTask=function(){
     console.log("Add Task...");
     //Create a new list item with the text from the #.add-tasks__input:
@@ -74,6 +73,7 @@ var addTask=function(){
     taskInput.value="";
 
 }
+
 
 //Edit an existing task.
 
@@ -145,6 +145,7 @@ var ajaxRequest=function(){
     console.log("AJAX Request");
 }
 
+
 //The glue to hold it all together.
 
 
@@ -170,6 +171,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     checkBox.onchange=checkBoxEventHandler;
 }
 
+
 //cycle over todoTaskHolder ul list items
 //for each list item
 for (var i=0; i<todoTaskHolder.children.length;i++){
@@ -179,15 +181,11 @@ for (var i=0; i<todoTaskHolder.children.length;i++){
 }
 
 
-
-
 //cycle over completedTasksHolder ul list items
 for (var i=0; i<completedTasksHolder.children.length;i++){
     //bind events to list items chldren(tasksIncompleted)
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
-
-
 
 
 // Issues with usability don"t get seen until they are in front of a human tester.
