@@ -61,8 +61,7 @@ button {
     color: #3a3a3a;
 }
 /* Heading */
-.task__title,
-.add-tasks__title {
+.task__title {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -132,7 +131,7 @@ button {
 }
 
 /* Completed */
-#task__list--completed .task__label {
+.task__list--completed .task__label {
     text-decoration: line-through;
     color: #888;
 }
