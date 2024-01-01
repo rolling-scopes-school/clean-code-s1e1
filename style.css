@@ -1,151 +1,151 @@
 /* Basic Style */
 .page {
-    background-color: #f8f8f8;
-    color: #333;
-    font-family: lato, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: lato, sans-serif;
 }
 .header {
-    width: 500px;
-    margin: 0 auto;
-    display: block;
-    text-align: right;
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
 }
 .header__img {
-    width: 100%;
+  width: 100%;
 }
 .header__link {
-    font-family: fantasy, cursive;
+  font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 .header { 
-    text-align: center;
+  text-align: center;
 }
 }
 .main {
-    display: block;
-    width: 500px;
-    margin: 0 auto 0;
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
 } 
 .task__label,
 .input__text {
-    width: 56%;
-    display: inline-block;
-    flex-grow: 1;
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
 }
 .add-tasks__wrapper {
-    display: flex;
+  display: flex;
 }
 ul {
-    margin: 0;
-    padding: 0px;
+  margin: 0;
+  padding: 0px;
 }
 li,
 h3 {
-    list-style: none;
+  list-style: none;
 }
 input,
 button {
-    outline: none;
+  outline: none;
 }
 .btn {
-    background: none;
-    border: 0px;
-    color: #888;
-    font-size: 15px;
-    width: 60px;
-    font-family: lato, sans-serif;
-    cursor: pointer;
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: lato, sans-serif;
+  cursor: pointer;
 }
 .btn:hover {
-    color: #3a3a3a;
+  color: #3a3a3a;
 }
 /* Heading */
 .task__title {
-    color: #333;
-    font-weight: 700;
-    font-size: 15px;
-    border-bottom: 2px solid #333;
-    padding: 30px 0 10px;
-    margin: 0;
-    text-transform: uppercase;
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
 }
 .input__text {
-    margin: 0;
-    font-size: 18px;
-    line-height: 18px;
-    height: 21px;
-    padding: 0 9px;
-    border: 1px solid #ddd;
-    background: #fff;
-    border-radius: 6px;
-    font-family: lato, sans-serif;
-    color: #888;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: lato, sans-serif;
+  color: #888;
 }
 .input__text:focus {
-    color: #333;
+  color: #333;
 }
 
 /* New Task */
 .add-tasks__title {
-    display: block;
-    margin: 0 0 20px;
+  display: block;
+  margin: 0 0 20px;
 }
 .add-tasks__input{
-    width: 318px;
+  width: 318px;
 }
 
 /* Task list */
 .task__item {
-    overflow: hidden;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .task__item > * {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .input__checkbox {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 .task__label {
-    padding-left: 10px;
-    box-sizing: border-box;
-    font-size: 18px;
-    width: 226px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
 }
 .input__text:not(:first-child) {
-    width: 226px;
+  width: 226px;
 }
 .task__remove-img {
-    height: 2em;
-    transform: rotatez(45deg);
-    transition: transform 200ms ease-in;
+  height: 2em;
+  transform: rotatez(45deg);
+  transition: transform 200ms ease-in;
 }
 .task__remove-img:hover {
-    transform: rotatez(0);
+  transform: rotatez(0);
 }
 
 /* Completed */
 .task__list--completed .task__label {
-    text-decoration: line-through;
-    color: #888;
+  text-decoration: line-through;
+  color: #888;
 }
 
 /* Edit Task */
 .input__text:not(:first-child) {
-    display: none;
+  display: none;
 }
 
 .task__edit-mode .input__text:not(:first-child) {
-    display: inline-block;
-    width: 224px;
+  display: inline-block;
+  width: 224px;
 }
 
 .task__edit-mode .task__label {
-    display: none;
+  display: none;
 }
