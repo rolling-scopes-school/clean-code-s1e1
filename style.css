@@ -5,18 +5,18 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.matrix {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.matrix img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.matrix .more-inf {
   font-family: fantasy, cursive;
 }
 
