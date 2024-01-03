@@ -13,7 +13,7 @@
 .about img {
   width: 100%;
 }
-.about .more-inf {
+.about .more-info {
   font-family: fantasy, cursive;
 }
 
@@ -22,7 +22,7 @@
     text-align: center;
   }
 }
-.centered-main-page-element {
+.centered-page {
   display: block;
   width: 500px;
   margin: 0 auto 0;
