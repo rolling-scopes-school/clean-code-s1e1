@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8" />
   </head>
   <body class="page">
-    <div class="about">
+    <section class="about">
       <img src="./eisenhower-matrix.jpg" alt="matrix" />
       <a
         class="more-info"
@@ -18,13 +18,14 @@
       >
         Want more details?
       </a>
-    </div>
-    <div class="centered-page">
-      <p id="top-add-todo"></p>
-      <label for="new-task">Add Item</label>
-      <div class="task-row-wrapper">
-        <input id="new-task" class="task" type="text" />
-        <button>Add</button>
+    </section>
+    <section class="centered-page">
+      <div id="top-add-todo">
+        <label for="new-task">Add Item</label>
+        <div class="task-row-wrapper">
+          <input id="new-task" class="task" type="text" />
+          <button>Add</button>
+        </div>
       </div>
       <h3>Todo</h3>
       <ul id="incomplete-tasks">
@@ -34,7 +35,7 @@
           <input type="text" class="task" />
           <button class="edit">Edit</button>
           <button class="delete">
-            <img src="./remove.svg" />
+            <img src="./remove.svg" alt="remove" />
           </button>
         </li>
         <li class="edit-mode">
@@ -43,7 +44,7 @@
           <input type="text" value="Go Shopping" class="task" />
           <button class="edit">Save</button>
           <button class="delete">
-            <img src="./remove.svg" />
+            <img src="./remove.svg" alt="remove" />
           </button>
         </li>
       </ul>
@@ -55,11 +56,11 @@
           <input type="text" class="task" />
           <button class="edit">Edit</button>
           <button class="delete">
-            <img src="./remove.svg" />
+            <img src="./remove.svg" alt="remove" />
           </button>
         </li>
       </ul>
-    </div>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
