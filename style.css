@@ -13,7 +13,7 @@ body {
 .header img {
   width: 100%;
 }
-.header .more_inf {
+.header__more-info {
   font-family: fantasy, cursive;
 }
 
