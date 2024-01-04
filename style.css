@@ -142,7 +142,7 @@ ul li input[type=text] {
 
 ul li.editMode input[type=text] {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 ul li.editMode label {
