@@ -6,14 +6,14 @@ body {
 }
 
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 input,button{
-  outline:none;
+  outline: none;
 }
 
 .block-info {
@@ -139,14 +139,14 @@ input,button{
 
 /* Edit Task */
 .item .task-text {
-  display:none
+  display: none
 }
 
 .edit-mode .task-text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .edit-mode .name-task {
-  display:none;
+  display: none;
 }
