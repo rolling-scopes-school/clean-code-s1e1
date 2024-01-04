@@ -4,21 +4,21 @@ body {
   color: #333;
   font-family: lato, sans-serif;
 }
-.block-information {
+.block-info {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.block-information img {
+.block-info img {
   width: 100%;
 }
-.block-information .more-information {
+.block-info .more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .block-information { text-align: center;
+  .block-info { text-align: center;
   }
 }
 .block-content {
