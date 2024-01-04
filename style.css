@@ -137,7 +137,7 @@ ul#completed-tasks label {
 
 /* Edit Task */
 ul li input[type=text] {
-    display:none
+    display: none
 }
 
 ul li.editMode input[type=text] {
