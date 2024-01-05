@@ -4,27 +4,26 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.header img {
   width: 100%;
 }
-.aaa .more_inf {
+.more_inf {
   font-family: fantasy, cursive;
 }
-
 @media (max-width:768px) {
-.aaa {
+.header {
   text-align: center;
 }
 }
-.centered-main-page-element {
+.main {
   display: block;
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto 0;
 }
 .task {
@@ -51,6 +50,7 @@ button {
   color: #888;
   font-size: 15px;
   width: 60px;
+  height: 20px;
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
