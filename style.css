@@ -39,13 +39,16 @@
   margin: 0;
   padding: 0px;
 }
-li, .head-task {
+li,
+.head-task {
   list-style: none;
 }
-input,button{
+input,
+button{
   outline: none;
 }
-.edit,.delete,.add {
+.edit,
+.delete,.add {
   background: none;
   border: 0px;
   color: #888;
