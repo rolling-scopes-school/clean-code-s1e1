@@ -30,7 +30,7 @@ button {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .header {
     text-align: center;
   }
@@ -134,10 +134,6 @@ button {
   align-items: center;
 }
 
-.task-item>* {
-  vertical-align: middle;
-}
-
 .task-checkbox {
   margin: 0 10px;
 }
@@ -149,7 +145,11 @@ button {
   width: 226px;
 }
 
-.task-item>.task-text {
+.task-item > * {
+  vertical-align: middle;
+}
+
+.task-item > .task-text {
   width: 226px
 }
 
