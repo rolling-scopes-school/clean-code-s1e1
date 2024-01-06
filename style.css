@@ -18,7 +18,8 @@
 }
 
 @media (max-width:768px) {
-  .logo { text-align: center;
+  .logo {
+    text-align: center;
   }
 }
 .main {
