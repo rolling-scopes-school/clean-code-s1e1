@@ -5,7 +5,6 @@
 //Solution: Add interactivity so the user can manage daily tasks.
 //Break things down into smaller steps and take each step at a time.
 
-
 //Event handling, user interaction is what starts the code execution.
 
 var taskInput = document.getElementById("new-task");//Add a new task.
@@ -88,7 +87,6 @@ var editTask = function(){
   var containsClass = listItem.classList.contains("edit-mode");
   //If class of the parent is .editmode
   if(containsClass){
-
     //switch to .editmode
     //label becomes the inputs value.
     label.innerText = editInput.value;
@@ -136,7 +134,6 @@ var taskIncomplete = function(){
 }
 
 
-
 var ajaxRequest = function(){
   console.log("AJAX Request");
 }
@@ -165,6 +162,7 @@ var bindTaskEvents = function(taskListItem,checkBoxEventHandler){
   checkBox.onchange = checkBoxEventHandler;
 }
 
+
 //cycle over incompleteTaskHolder ul list items
 //for each list item
 for (var i = 0; i<incompleteTaskHolder.children.length;i++){
@@ -173,14 +171,11 @@ for (var i = 0; i<incompleteTaskHolder.children.length;i++){
 }
 
 
-
-
 //cycle over completedTasksHolder ul list items
 for (var i = 0; i<completedTasksHolder.children.length;i++){
   //bind events to list items chldren(tasksIncompleted)
   bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
-
 
 
 
