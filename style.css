@@ -27,7 +27,8 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.tasks-list__task-head,
+.tasks-list__task-input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -47,8 +48,9 @@ input,
 button{
   outline: none;
 }
-.edit,
-.delete,.add {
+.tasks-list__edit,
+.tasks-list__delete,
+.tasks-list__add {
   background: none;
   border: 0px;
   color: #888;
@@ -57,9 +59,9 @@ button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.edit:hover,
-.delete:hover,
-.add:hover {
+.tasks-list__edit:hover,
+.tasks-list__delete:hover,
+.tasks-list__add:hover {
   color: #3a3a3a;
 }
 /* Heading */
@@ -124,12 +126,12 @@ li > label {
 li > input[type="text"] {
   width: 226px;
 }
-.delete .delete-image {
+.tasks-list__delete .tasks-list__delete-image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete .delete-image:hover {
+.tasks-list__delete .tasks-list__delete-image:hover {
     transform: rotateZ(0);
 }
 
