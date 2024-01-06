@@ -30,7 +30,7 @@
 .task, .task-label {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .task-wrapper {
    display: flex;
@@ -118,7 +118,7 @@ button:hover {
   width: 226px;
 }
 #todo-tasks .task {
-  width: 226px
+  width: 226px;
 }
 .remove-img {
   height: 2em;
@@ -131,13 +131,13 @@ button:hover {
 
 /* Completed */
 #completed-tasks .task-label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .task {
-  display: none
+  display: none;
 }
 
 #new-task {
@@ -146,7 +146,7 @@ button:hover {
 
 .edit-mode .task {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .edit-mode .task-label {
