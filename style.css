@@ -4,36 +4,44 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .matrix-methodology {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .matrix-methodology .matrix-methodology__img {
   width: 100%;
 }
+
 .matrix-methodology .matrix-methodology__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .matrix-methodology { text-align: center;
+  .matrix-methodology {
+    text-align: center;
   }
 }
+
 .list-of-tasks {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task-explanation {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .added-task {
   display: flex;
 }
+
 ul,
 li,
 h3 {
@@ -41,9 +49,11 @@ h3 {
   padding: 0px;
   list-style:none;
 }
-input,button{
+
+input,button {
   outline:none;
 }
+
 .btn {
   background: none;
   border: 0px;
@@ -53,9 +63,11 @@ input,button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .btn:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .title,
 .added-task__title {
@@ -67,6 +79,7 @@ input,button{
   margin: 0;
   text-transform: uppercase;
 }
+
 .task-input {
   margin: 0;
   font-size: 18px;
@@ -79,6 +92,7 @@ input,button{
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .task-input:focus {
   color: #333;
 }
@@ -88,7 +102,8 @@ input,button{
   display: block;
   margin: 0 0 20px;
 }
-.added-task-explanation{
+
+.added-task-explanation {
    width: 318px;
 }
 
@@ -102,6 +117,7 @@ input,button{
   justify-content: space-between;
   align-items: center;
 }
+
 .tasks-list > * {
   vertical-align: middle;
 }
@@ -109,20 +125,24 @@ input,button{
 .tasks-list > .task-checkbox {
   margin: 0 10px;
 }
+
 .tasks-list > .task-explanation {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .tasks-list > .task-input {
   width: 226px
 }
+
 .task-delete .remove-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .task-delete .remove-img:hover {
   transform: rotateZ(0);
 }
@@ -143,7 +163,7 @@ input,button{
   width:224px
 }
 
-.edit-tasks .completed-tasks-explanation{
+.edit-tasks .completed-tasks-explanation {
   display: none;
 }
 
