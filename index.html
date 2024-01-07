@@ -22,7 +22,7 @@
   </header>
   <main class="main">
     <section class="item" id="item">
-      <h2 class="item__title">
+      <h2 class="section__title item__title item__title">
         <label class="item__label"
           for="new-task">Add Item
         </label>
@@ -30,19 +30,19 @@
       <div class="task-wrapper">
         <input
           id="new-task"
-          class="task new-task"
+          class="task new-task input__new-task"
           type="text">
         <button class="button">Add</button>
       </div>
     </section>
     <section class="todo">
-      <h3 class="section__title">Todo</h3>
-      <ul class="todo__list list" id="incomplete-tasks">
+      <h2 class="section__title">Todo</h2>
+      <ul class="list" id="incomplete-tasks">
         <li class="li">
-          <input class="checkbox"
+          <input class="input checkbox"
             type="checkbox">
-          <label class="label">Pay Bills</label>
-          <input class="todo__task task"
+          <label class="label task">Pay Bills</label>
+          <input class="input todo__task task"
             type="text">
           <button class="button btn-edit">Edit</button>
           <button class="button btn-delete">
@@ -50,10 +50,10 @@
           </button>
         </li>
         <li class="li edit-mode">
-          <input class="checkbox"
+          <input class="input checkbox"
             type="checkbox">
-          <label class="label">Go Shopping</label>
-          <input class="task"
+          <label class="label task">Go Shopping</label>
+          <input class="input task todo__task"
             type="text"
             value="Go Shopping">
           <button class="button btn-edit">Save</button>
@@ -64,13 +64,13 @@
       </ul>
     </section>
     <section class="completed">
-      <h3 class="section__title">Completed</h3>
-      <ul class="completed__list list" id="completed-tasks">
+      <h2 class="section__title">Completed</h2>
+      <ul class="list" id="completed-tasks">
         <li class="li">
-          <input class="checkbox"
+          <input class="input checkbox"
             type="checkbox" checked>
           <label class="task label">See the Doctor</label>
-          <input class="todo__task task"
+          <input class="input todo__task task"
             type="text">
           <button class="button btn-edit">Edit</button>
           <button class="button btn-delete">
