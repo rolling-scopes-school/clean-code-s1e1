@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,7 +10,7 @@ body {
   display: block;
   text-align: right;
 }
-.matrix-methodology img {
+.matrix-methodology .matrix-methodology__img {
   width: 100%;
 }
 .matrix-methodology .matrix-methodology__link {
@@ -44,7 +44,7 @@ h3 {
 input,button{
   outline:none;
 }
-button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -53,12 +53,12 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.title,
+.added-task__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -67,7 +67,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.task-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -79,21 +79,21 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.task-input:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.added-task__title {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+.added-task-explanation{
    width: 318px;
 }
 
 /* Task list */
-li {
+.tasks-list {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -102,47 +102,51 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.tasks-list > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.tasks-list > .task-checkbox {
   margin: 0 10px;
 }
-li > label {
+.tasks-list > .task-explanation {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+.tasks-list > .task-input {
   width: 226px
 }
-.task-delete img {
+.task-delete .remove-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.task-delete img:hover {
+.task-delete .remove-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.completed-tasks-explanation {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.task-input-change {
   display:none
 }
 
-ul li.edit-tasks input[type=text] {
+.edit-tasks .task-input {
   display:inline-block;
   width:224px
 }
 
-ul li.edit-tasks label {
+.edit-tasks .completed-tasks-explanation{
+  display: none;
+}
+
+.edit-tasks .task-explanation {
   display:none;
 }
