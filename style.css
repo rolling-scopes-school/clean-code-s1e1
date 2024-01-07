@@ -47,11 +47,11 @@ li,
 h3 {
   margin: 0;
   padding: 0px;
-  list-style:none;
+  list-style: none;
 }
 
 input,button {
-  outline:none;
+  outline: none;
 }
 
 .btn {
@@ -155,12 +155,12 @@ input,button {
 
 /* Edit Task */
 .task-input-change {
-  display:none
+  display: none
 }
 
 .edit-tasks .task-input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .edit-tasks .completed-tasks-explanation {
@@ -168,5 +168,5 @@ input,button {
 }
 
 .edit-tasks .task-explanation {
-  display:none;
+  display: none;
 }
