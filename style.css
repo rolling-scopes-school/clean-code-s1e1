@@ -41,10 +41,10 @@ ul {
 }
 li,
 .main__primary-title {
-    list-style:none;
+    list-style: none;
 }
 input,button{
-    outline:none;
+    outline: none;
 }
 button {
     background: none;
@@ -117,7 +117,7 @@ label[for='new-task'] {
     font-size: 18px;
     width: 226px;
 }
-.main__item >    input[type="text"] {
+.main__item > input[type="text"] {
     width: 226px
 }
 .main__button-delete img {
@@ -137,14 +137,14 @@ label[for='new-task'] {
 
 /* Edit Task */
 .main__item input[type=text] {
-    display:none
+    display: none
 }
 
 .main__edit_mode input[type=text] {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px
 }
 
 .main__edit_mode label {
-    display:none;
+    display: none;
 }
