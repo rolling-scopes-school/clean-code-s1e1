@@ -67,7 +67,7 @@
   cursor: pointer;
 }
 
-.task-manager__btn:hover  {
+.task-manager__btn:hover {
   color: #3a3A3a;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .task-manager__input-field,
-.task-manager__input-field-add  {
+.task-manager__input-field-add {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -162,7 +162,7 @@
   display: none;
 }
 
-.task-manager__item.edit-mode .task-manager__input-field  {
+.task-manager__item.edit-mode .task-manager__input-field {
   display: inline-block;
   width: 224px;
 }
