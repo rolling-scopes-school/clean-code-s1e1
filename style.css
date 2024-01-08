@@ -144,6 +144,6 @@ ul li.edit_mode input[type=text] {
     width:224px
 }
 
-ul li.edit_mode label {
+ul li.edit__mode label {
     display:none;
 }
