@@ -110,14 +110,21 @@ const taskCompleted = function () {
   }
 };
 
-var taskIncomplete = function () {
+const taskIncomplete = function () {
   console.log("Incomplete Task...");
-  //Mark task as incomplete.
-  //When the checkbox is unchecked
-  //Append the task list item to the #incompleteTasks.
-  var listItem = this.parentNode;
-  incompleteTaskHolder.appendChild(listItem);
-  bindTaskEvents(listItem, taskCompleted);
+
+  const listItem = this.parentNode;
+
+  if (listItem && listItem.parentNode) {
+    // Remove the "completed" class
+    listItem.classList.remove("completed");
+
+    // Append the task list item to the container for incomplete tasks
+    listItem.parentNode.appendChild(listItem);
+
+    // Rebind events for the task (now in a new container)
+    bindTaskEvents(listItem, taskCompleted);
+  }
 };
 
 var ajaxRequest = function () {
