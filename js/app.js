@@ -137,19 +137,19 @@ const ajaxRequest = () => {
 addButton.addEventListener("click", addTask);
 addButton.addEventListener("click", ajaxRequest);
 
-var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
+const bindTaskEvents = (taskListItem, checkBoxEventHandler) => {
   console.log("bind list item events");
-  //select ListItems children
-  var checkBox = taskListItem.querySelector("input[type=checkbox]");
-  var editButton = taskListItem.querySelector("button.edit");
-  var deleteButton = taskListItem.querySelector("button.delete");
+  // Select ListItems children
+  const checkBox = taskListItem.querySelector("input[type=checkbox]");
+  const editButton = taskListItem.querySelector("button.edit");
+  const deleteButton = taskListItem.querySelector("button.delete");
 
-  //Bind editTask to edit button.
-  editButton.onclick = editTask;
-  //Bind deleteTask to delete button.
-  deleteButton.onclick = deleteTask;
-  //Bind taskCompleted to checkBoxEventHandler.
-  checkBox.onchange = checkBoxEventHandler;
+  // Bind editTask to edit button.
+  editButton.addEventListener("click", editTask);
+  // Bind deleteTask to delete button.
+  deleteButton.addEventListener("click", deleteTask);
+  // Bind taskCompleted to checkBoxEventHandler.
+  checkBox.addEventListener("change", checkBoxEventHandler);
 };
 
 //cycle over incompleteTaskHolder ul list items
