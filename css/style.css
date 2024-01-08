@@ -18,7 +18,7 @@ body {
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.header__link { text-align: center;
 }
 }
 .main {
