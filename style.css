@@ -1,24 +1,24 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.description {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.description_todo img {
   width: 100%;
 }
-.aaa .more_inf {
+.description .more_inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.description_todo { text-align: center;
 }
 }
 .centered-main-page-element {
@@ -31,7 +31,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.task-row {
   display: flex;
 }
 ul {
