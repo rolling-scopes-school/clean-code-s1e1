@@ -5,56 +5,56 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="todo-page">
     <div class="info">
-      <img src="./eisenhower-matrix.jpg">
-      <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      <img class="info__img" src="./eisenhower-matrix.jpg">
+      <a class="info__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
     <div class="todos">
       <p id="addTodo">
-        <label for="new-task">Add Item</label>
+        <label for="newTask">Add Item</label>
         <div class="task-row">
           <input 
-            id="new-task"
-            class="task"
+            id="newTask"
+            class="text-input"
             type="text"
           >
-          <button>Add</button>
+          <button class="btn" id="addTodoBtn">Add</button>
         </div>
       </p>
       <h3>Todo</h3>
-      <ul id="incompleteTasks">
+      <ul class="task-list" id="incompleteTasks">
         <li>
-          <input type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <input type="checkbox" class="checkbox-input">
+          <label class="task-label">Pay Bills</label>
+          <input type="text" class="task text-input">
+          <button class="btn edit">Edit</button>
+          <button class="btn delete">
             <img src="./remove.svg">
           </button>
         </li>
         <li class="edit-mode">
-          <input type="checkbox">
-          <label class="task">Go Shopping</label>
+          <input type="checkbox" class="checkbox-input">
+          <label class="task-label">Go Shopping</label>
           <input 
             type="text"
             value="Go Shopping"
-            class="task"
+            class="task text-input"
           >
-          <button class="edit">Save</button>
-          <button class="delete">
+          <button class="btn edit">Save</button>
+          <button class="btn delete">
             <img src="./remove.svg">
           </button>
         </li>
       </ul>
       <h3>Completed</h3>
-      <ul id="completedTasks">
+      <ul class="task-list" id="completedTasks">
         <li>
-          <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <input type="checkbox" checked class="checkbox-input">
+          <label class="task-label">See the Doctor</label>
+          <input type="text" class="task text-input">
+          <button class="btn edit">Edit</button>
+          <button class="btn delete">
             <img src="./remove.svg">
           </button>
         </li>
