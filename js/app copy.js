@@ -8,10 +8,10 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-const taskInput=document.querySelector("#new-task");//Add a new task.
-const addButton=document.querySelector(".main__button");//first button
-const incompleteTaskHolder=document.querySelector("#incomplete-tasks");//ul of #incompleteTasks
-const completedTasksHolder=document.querySelector("#completed-tasks");//completed-tasks
+var taskInput=document.getElementById("new-task");//Add a new task.
+var addButton=document.getElementsByTagName("button")[0];//first button
+var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incompleteTasks
+var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
 //New task list item
