@@ -129,12 +129,12 @@ ul {
 .task > .input-text {
   width: 226px;
 }
-.btn_delete img {
+.btn__image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.btn_delete img:hover  {
+.btn__image:hover  {
   transform: rotateZ(0);
 }
 
