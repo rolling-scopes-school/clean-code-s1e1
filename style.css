@@ -13,7 +13,7 @@
 .header img {
   width: 100%;
 }
-.header .more_inf {
+.header .link {
   font-family: "fantasy", cursive;
 }
 
@@ -22,7 +22,7 @@
     text-align: center;
   }
 }
-.centered-main-page-element {
+.todo-list {
   display: block;
   width: 500px;
   margin: 0 auto 0;
