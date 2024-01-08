@@ -37,7 +37,7 @@ body {
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -146,13 +146,13 @@ li > input[type="text"] {
   /* border: solid green 1px; */
 }
 
-button.delete-button img {
+button.delete-btn img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete-button img:hover {
+button.delete-btn img:hover {
   transform: rotateZ(0);
 }
 
