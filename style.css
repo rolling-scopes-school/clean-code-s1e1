@@ -43,16 +43,16 @@
 }
 
 .task-manager__list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .task-manager__title {
-  list-style:none;
+  list-style: none;
 }
 
 .task-manager__input-field-add, .task, .task-manager__btn {
-  outline:none;
+  outline: none;
 }
 
 .task-manager__btn {
@@ -157,14 +157,14 @@
 
 /* Edit Task */
 .task-manager__input-field {
-  display:none;
+  display: none;
 }
 
 .task-manager__item.edit-mode .task-manager__input-field  {
-  display:inline-block;
-  width:224px;
+  display: inline-block;
+  width: 224px;
 }
 
 .task-manager__item.edit-mode .task-manager__label.task {
-  display:none;
+  display: none;
 }
