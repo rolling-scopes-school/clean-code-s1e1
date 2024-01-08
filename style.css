@@ -30,7 +30,7 @@
 .todo-item__input {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .todo-list {
@@ -133,18 +133,18 @@ button{
 
 /* Completed */
 .todo-item__label--completed {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .todo-item--editable .todo-item__input {
-  display: none
+  display: none;
 }
 
 .todo-item--edit .todo-item__input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .todo-item--edit .todo-item__label {
