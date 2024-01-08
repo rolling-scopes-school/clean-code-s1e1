@@ -36,13 +36,14 @@ var createNewTaskElement = function (taskString) {
   //Each elements, needs appending
   checkBox.type = "checkbox";
   editInput.type = "text";
-  editInput.className = "task";
+  editInput.className = "task task_text";
 
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
-  editButton.className = "edit-btn";
+  editButton.className = "button button_edit";
 
-  deleteButton.className = "delete-btn";
+  deleteButton.className = "button button_delete";
   deleteButtonImg.src = "./remove.svg";
+  deleteButtonImg.className = "button__img_delete";
   deleteButton.appendChild(deleteButtonImg);
 
   //and appending.
@@ -77,9 +78,9 @@ var editTask = function () {
 
   var editInput = listItem.querySelector("input[type=text]");
   var label = listItem.querySelector("label");
-  var editBtn = listItem.querySelector(".edit-btn");
+  var editBtn = listItem.querySelector(".button_edit");
   //var containsClass=listItem.classList.contains("editMode");
-  var containsClass = listItem.classList.contains("edit-mode");
+  var containsClass = listItem.classList.contains("li_edit-mode");
   //If class of the parent is .editmode
   if (containsClass) {
     //switch to .editmode
@@ -92,7 +93,7 @@ var editTask = function () {
   }
 
   //toggle .editmode on the parent.
-  listItem.classList.toggle("edit-mode");
+  listItem.classList.toggle("li_edit-mode");
   //listItem.classList.toggle("editMode");
 };
 
@@ -141,8 +142,8 @@ var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   console.log("bind list item events");
   //select ListItems children
   var checkBox = taskListItem.querySelector("input[type=checkbox]");
-  var editButton = taskListItem.querySelector("button.edit-btn");
-  var deleteButton = taskListItem.querySelector("button.delete-btn");
+  var editButton = taskListItem.querySelector("button.button_edit");
+  var deleteButton = taskListItem.querySelector("button.button_delete");
 
   //Bind editTask to edit button.
   editButton.onclick = editTask;

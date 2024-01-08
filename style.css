@@ -1,6 +1,7 @@
 /* Basic Style **************/
 
 body {
+  /*включить в контейнер после БЭМ*/
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -37,7 +38,7 @@ body {
   flex-grow: 1;
 }
 
-.add-wrapper {
+.add-label__wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -57,6 +58,7 @@ button {
   outline: none;
 }
 
+/* .button { заменить после БЭМ */
 button {
   background: none;
   border: 0;
@@ -67,6 +69,7 @@ button {
   cursor: pointer;
 }
 
+/* .button:hover { заменить после БЭМ */
 button:hover {
   color: #3a3a3a;
 }
@@ -84,6 +87,7 @@ button:hover {
 }
 
 input[type="text"] {
+  /* .task_text { заменить после БЭМ */
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -102,13 +106,14 @@ input[type="text"]:focus {
 
 /* New Task ************************/
 
-.label-add {
+.add-label {
   display: block;
   margin-bottom: 20px;
   /* border: solid green 4px; */
 }
 
 input#new-task {
+  /* .add-label__input {  заменить после БЭМ*/
   width: 318px;
 }
 
@@ -124,6 +129,7 @@ li {
 }
 
 li > * {
+  /* .li {    заменить после БЭМ*/
   vertical-align: middle;
 }
 
@@ -146,17 +152,20 @@ li > input[type="text"] {
   /* border: solid green 1px; */
 }
 
-button.delete-btn img {
+button.button_delete img {
+  /* .button__img_delete { заменить после БЭМ */
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete-btn img:hover {
+/* .button__img_delete:hover {  заменить после БЭМ*/
+button.button_delete img:hover {
   transform: rotateZ(0);
 }
 
-/* Completed */
+/* Completed ***********************/
+
 ul#completed-tasks label {
   text-decoration: line-through;
   color: #888;
@@ -168,11 +177,11 @@ ul li input[type="text"] {
   display: none;
 }
 
-ul li.edit-mode input[type="text"] {
+ul li.li_edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.edit-mode label {
+ul li.li_edit-mode label {
   display: none;
 }
