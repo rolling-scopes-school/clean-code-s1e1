@@ -27,18 +27,25 @@ const createNewTaskElement = (taskString) => {
   return listItem;
 };
 
-var addTask = function () {
-  console.log("Add Task...");
-  //Create a new list item with the text from the #new-task:
-  if (!taskInput.value) return;
-  var listItem = createNewTaskElement(taskInput.value);
-
-  //Append listItem to incompleteTaskHolder
-  incompleteTaskHolder.appendChild(listItem);
-  bindTaskEvents(listItem, taskCompleted);
-
-  taskInput.value = "";
-};
+const addTask = () => {
+    console.log("Add Task...");
+  
+    // Check if taskInput is defined
+    if (!taskInput || !taskInput.value) return;
+  
+    // Create a new list item with the text from the #new-task
+    const listItem = createNewTaskElement(taskInput.value);
+  
+    // Append listItem to incompleteTaskHolder
+    incompleteTaskHolder.appendChild(listItem);
+  
+    // Bind events to the new task
+    bindTaskEvents(listItem, taskCompleted);
+  
+    // Clear the input field
+    taskInput.value = "";
+  };
+  
 
 //Edit an existing task.
 
