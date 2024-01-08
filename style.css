@@ -5,6 +5,10 @@ body {
   font-family: Lato, sans-serif;
 }
 
+h1 {
+  display: none;
+}
+
 .img-container {
   width: 500px;
   margin: 0 auto;
