@@ -35,7 +35,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-manager__input {
@@ -136,7 +136,7 @@
 }
 
 .task-manager__input-field {
-  width: 226px
+  width: 226px;
 }
 
 .task-manager__icon-remove {
@@ -151,7 +151,7 @@
 
 /* Completed */
 #complete-tasks .task-manager__label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
