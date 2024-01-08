@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,15 +10,15 @@ body {
   display: block;
   text-align: right;
 }
-.header img {
+.header .image {
   width: 100%;
 }
-.header .more-info {
+.header.more_info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
+.aaa { text-align: center;
 }
 }
 .main {
@@ -38,7 +38,7 @@ ul {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+li, .task-name {
   list-style:none;
 }
 input,button{
@@ -57,7 +57,7 @@ button:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
+.task-name,
 label[for='new-task'] {
   color: #333;
   font-weight: 700;
@@ -88,7 +88,7 @@ label[for='new-task'] {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
   width: 318px;
 }
 
@@ -127,7 +127,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-task label {
   text-decoration: line-through
   color: #888;
 }
