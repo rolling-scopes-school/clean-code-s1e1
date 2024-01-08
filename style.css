@@ -32,6 +32,10 @@
   margin: 0 auto 0;
 }
 
+.task-row {
+  display: flex;
+}
+
 .task__input,
 .task__label,
 .task-row__input {
@@ -41,8 +45,6 @@
 }
 
 .task__button {
-  list-style: none;
-  outline: none;
   background: none;
   border: 1px;
   color: #888;
@@ -71,6 +73,7 @@
 .task-row__input,
 .task__input {
   width: 226px;
+  margin: 0;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
