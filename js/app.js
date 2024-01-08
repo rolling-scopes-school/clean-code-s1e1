@@ -93,13 +93,21 @@ const deleteTask = function () {
 };
 
 //Mark task completed
-var taskCompleted = function () {
+const taskCompleted = function () {
   console.log("Complete Task...");
 
-  //Append the task list item to the #completed-tasks
-  var listItem = this.parentNode;
-  completedTasksHolder.appendChild(listItem);
-  bindTaskEvents(listItem, taskIncomplete);
+  const listItem = this.parentNode;
+
+  if (listItem && listItem.parentNode) {
+    // Add a class to the parent list item
+    listItem.classList.add("completed");
+
+    // Append the task list item to the container for completed tasks
+    listItem.parentNode.appendChild(listItem);
+
+    // Rebind events for the task (now in a new container)
+    bindTaskEvents(listItem, taskIncomplete);
+  }
 };
 
 var taskIncomplete = function () {
