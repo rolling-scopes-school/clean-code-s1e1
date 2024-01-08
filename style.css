@@ -142,7 +142,7 @@ label[for='new-task'] {
 
 .main__edit_mode input[type=text] {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .main__edit_mode label {
