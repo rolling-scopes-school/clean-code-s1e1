@@ -28,49 +28,55 @@ const createNewTaskElement = (taskString) => {
 };
 
 const addTask = () => {
-    console.log("Add Task...");
-  
-    // Check if taskInput is defined
-    if (!taskInput || !taskInput.value) return;
-  
-    // Create a new list item with the text from the #new-task
-    const listItem = createNewTaskElement(taskInput.value);
-  
-    // Append listItem to incompleteTaskHolder
-    incompleteTaskHolder.appendChild(listItem);
-  
-    // Bind events to the new task
-    bindTaskEvents(listItem, taskCompleted);
-  
-    // Clear the input field
-    taskInput.value = "";
-  };
-  
+  console.log("Add Task...");
+
+  // Check if taskInput is defined
+  if (!taskInput || !taskInput.value) return;
+
+  // Create a new list item with the text from the #new-task
+  const listItem = createNewTaskElement(taskInput.value);
+
+  // Append listItem to incompleteTaskHolder
+  incompleteTaskHolder.appendChild(listItem);
+
+  // Bind events to the new task
+  bindTaskEvents(listItem, taskCompleted);
+
+  // Clear the input field
+  taskInput.value = "";
+};
 
 //Edit an existing task.
 
-var editTask = function () {
+const editTask = function () {
   console.log("Edit Task...");
   console.log("Change 'edit' to 'save'");
 
-  var listItem = this.parentNode;
+  const listItem = this.parentNode;
 
-  var editInput = listItem.querySelector("input[type=text]");
-  var label = listItem.querySelector("label");
-  var editBtn = listItem.querySelector(".edit");
-  var containsClass = listItem.classList.contains("editMode");
-  //If class of the parent is .editmode
+  const editInput = listItem.querySelector("input[type=text]");
+  const label = listItem.querySelector("label");
+  const editBtn = listItem.querySelector(".edit");
+
+  if (!editInput || !label || !editBtn) {
+    console.error("Missing required elements");
+    return;
+  }
+
+  const containsClass = listItem.classList.contains("editMode");
+
+  // If class of the parent is .editmode
   if (containsClass) {
-    //switch to .editmode
-    //label becomes the inputs value.
-    label.innerText = editInput.value;
+    // Switch to .editmode
+    // Label becomes the input's value.
+    label.textContent = editInput.value;
     editBtn.innerText = "Edit";
   } else {
-    editInput.value = label.innerText;
+    editInput.value = label.textContent;
     editBtn.innerText = "Save";
   }
 
-  //toggle .editmode on the parent.
+  // Toggle .editmode on the parent.
   listItem.classList.toggle("editMode");
 };
 
