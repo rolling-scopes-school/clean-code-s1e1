@@ -52,7 +52,7 @@ ul {
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.new-task-item {
   display: flex;
 }
 
