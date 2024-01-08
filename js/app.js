@@ -81,13 +81,15 @@ const editTask = function () {
 };
 
 //Delete task.
-var deleteTask = function () {
+const deleteTask = function () {
   console.log("Delete Task...");
 
-  var listItem = this.parentNode;
-  var ul = listItem.parentNode;
-  //Remove the parent list item from the ul.
-  ul.removeChild(listItem);
+  const listItem = this.parentNode;
+
+  if (listItem && listItem.parentNode) {
+    // Remove the parent list item from the ul.
+    listItem.parentNode.removeChild(listItem);
+  }
 };
 
 //Mark task completed
