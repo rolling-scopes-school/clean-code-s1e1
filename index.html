@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="style.css"media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <div class="header">
+    <header class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg">
       <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="main">
+    </header>
+    <main class="main">
       <section class="todo-section todo-section--add-item">
-        <label for="new-task" class="todo-section__title todo-section__title--add-item">Add Item</label>
+        <h3 class="todo-section__title todo-section__title--add-item">Add Item</h3>
         <div class="todo-item todo-item--new">
           <input id="new-task"class="todo-item__input todo-item__input--add-item" type="text">
           <button class="todo-item__btn todo-item__btn--add-item">Add</button>
@@ -46,7 +46,7 @@
         <ul class="todo-list todo-list--completed">
           <li  class="todo-item todo-item--editable">
             <input type="checkbox" class="todo-item__checkbox" checked>
-            <label  class="todo-item__label todo-item__label--completed">See the Doctor</label>
+            <label  class="todo-item__label">See the Doctor</label>
             <input type="text" class="todo-item__input">
             <button class="todo-item__btn todo-item__btn--edit">Edit</button>
             <button class="todo-item__btn todo-item__btn--delete">
@@ -55,7 +55,7 @@
           </li>
         </ul>
       </section>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>

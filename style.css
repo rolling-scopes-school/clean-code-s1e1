@@ -133,7 +133,7 @@ button{
 }
 
 /* Completed */
-.todo-item__label--completed {
+.todo-list--completed .todo-item__label{
   text-decoration: line-through;
   color: #888;
 }

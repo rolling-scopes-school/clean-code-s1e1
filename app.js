@@ -47,7 +47,7 @@ var createNewTaskElement=function(taskString){
 
   deleteButton.className="todo-item__btn todo-item__btn--delete";
   deleteButtonImg.src="./remove.svg";
-  
+
   deleteButtonImg.className="todo-item__img-delete";
   deleteButton.appendChild(deleteButtonImg);
 
@@ -160,7 +160,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
   console.log("bind list item events");
 //select ListItems children
   var checkBox=taskListItem.querySelector(".todo-item__checkbox");
-  var editButton=taskListItem.querySelector("todo-item__btn--edit");
+  var editButton=taskListItem.querySelector(".todo-item__btn--edit");
   var deleteButton=taskListItem.querySelector(".todo-item__btn--delete");
 
 
