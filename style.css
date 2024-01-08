@@ -4,15 +4,18 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header__image {
   width: 100%;
 }
+
 .header__link {
   font-family: fantasy, cursive;
 }
@@ -22,30 +25,35 @@
     text-align: center;
   }
 }
+
 .main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .task-manager__input {
   display: flex;
 }
+
 .task-manager__list {
   margin:0;
   padding: 0px;
 }
+
 .task-manager__title {
   list-style:none;
 }
+
 .task-manager__input-field-add, .task, .task-manager__btn {
   outline:none;
 }
-
 
 .task-manager__btn {
   background: none;
@@ -60,6 +68,7 @@
 .task-manager__btn:hover  {
   color: #3a3A3a;
 }
+
 /* Heading */
 .task-manager__title,
 .task-manager__title-add {
@@ -71,6 +80,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .task-manager__input-field,
 .task-manager__input-field-add  {
   margin: 0;
@@ -84,6 +94,7 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .task-manager__input-field:focus {
   color: #333;
 }
@@ -93,6 +104,7 @@
   display: block;
   margin: 0 0 20px;
 }
+
 .task-manager__input-field-add {
   width: 318px;
 }
@@ -107,6 +119,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .task-manager__item > * {
   vertical-align: middle;
 }
@@ -114,20 +127,24 @@
 .checkbox {
   margin: 0 10px;
 }
+
 .task-manager__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .task-manager__input-field {
   width: 226px
 }
+
 .task-manager__icon-remove {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .task-manager__icon-remove:hover {
   transform: rotateZ(0);
 }
@@ -136,7 +153,6 @@
 #complete-tasks .task-manager__label {
     text-decoration: line-through
     color: #888;
-  
 }
 
 /* Edit Task */
