@@ -18,8 +18,8 @@
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
-}
+  .header { text-align: center;
+  }
 }
 .main {
   display: block;
@@ -40,7 +40,8 @@
 li {
   list-style:none;
 }
-input,button{
+input,
+button{
   outline:none;
 }
 .todo-item__btn {
