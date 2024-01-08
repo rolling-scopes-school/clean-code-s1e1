@@ -51,7 +51,9 @@
   list-style: none;
 }
 
-.task-manager__input-field-add, .task, .task-manager__btn {
+.task-manager__input-field-add, 
+.task, 
+.task-manager__btn {
   outline: none;
 }
 
