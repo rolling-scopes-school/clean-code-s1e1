@@ -17,6 +17,8 @@ var completedTasksHolder = document.getElementById("completed-tasks"); //complet
 var createNewTaskElement = function (taskString) {
   var listItem = document.createElement("li");
 
+  listItem.className = "li"; // не закончил
+
   //input (checkbox)
   var checkBox = document.createElement("input"); //checkbx
   //label
@@ -60,6 +62,7 @@ var addTask = function () {
   //Create a new list item with the text from the #new-task:
   if (!taskInput.value) return;
   var listItem = createNewTaskElement(taskInput.value);
+  listItem.className = "li add-label__input"; // не закончил
 
   //Append listItem to incompleteTaskHolder
   incompleteTaskHolder.appendChild(listItem);
@@ -170,4 +173,3 @@ for (var i = 0; i < completedTasksHolder.children.length; i++) {
 
 //prevent creation of empty tasks.
 
-//Change edit to save when you are in edit mode.
