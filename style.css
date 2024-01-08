@@ -39,10 +39,12 @@ ul {
   margin: 0;
   padding: 0px;
 }
-li, .task-name {
+li,
+.task-name {
   list-style: none;
 }
-input,button{
+input,
+button{
   outline: none;
 }
 button {
