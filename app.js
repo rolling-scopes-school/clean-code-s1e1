@@ -1,8 +1,10 @@
 //Document is the DOM can be accessed in the console with document.window.
 // Tree is from the top, html, body, p etc.
+
 //Problem: User interaction does not provide the correct results.
 //Solution: Add interactivity so the user can manage daily tasks.
 //Break things down into smaller steps and take each step at a time.
+
 
 // Event handling, user interaction is what starts the code execution.
 
@@ -47,22 +49,14 @@ var createNewTaskElement=function(taskString){
   //and appending.
   listItem.appendChild(checkBox);
   listItem.appendChild(label);
-
-    
-        
-          
-    
-
-        
-        Expand All
-    
-    @@ -63,31 +60,31 @@ var createNewTaskElement=function(taskString){
-  
   listItem.appendChild(editInput);
   listItem.appendChild(editButton);
   listItem.appendChild(deleteButton);
   return listItem;
 }
+
+
+
 var addTask=function(){
   console.log("Add Task...");
   //Create a new list item with the text from the #new-task:
@@ -94,17 +88,6 @@ var editTask=function(){
   if(containsClass){
 
     //switch to .editmode
-
-    
-        
-          
-    
-
-        
-        Expand All
-    
-    @@ -99,8 +96,8 @@ var editTask=function(){
-  
     //label becomes the inputs value.
     label.innerText=editInput.value;
     editBtn.innerText="Edit";
@@ -118,25 +101,18 @@ var editTask=function(){
 };
 
 
-
-    
-        
-          
-    
-
-        
-        Expand All
-    
-    @@ -122,7 +119,7 @@ var taskCompleted=function(){
-  
 //Delete task.
 var deleteTask=function(){
   console.log("Delete Task...");
+
   var listItem=this.parentNode;
   var ul=listItem.parentNode;
   //Remove the parent list item from the ul.
   ul.removeChild(listItem);
+
 }
+
+
 //Mark task completed
 var taskCompleted=function(){
   console.log("Complete Task...");
@@ -148,16 +124,7 @@ var taskCompleted=function(){
 
 }
 
-    
-        
-          
-    
 
-        
-        Expand All
-    
-    @@ -132,9 +129,9 @@ var taskIncomplete=function(){
-  
 var taskIncomplete=function(){
   console.log("Incomplete Task...");
   //Mark task as incomplete.
@@ -169,24 +136,20 @@ var taskIncomplete=function(){
 }
 
 
-    
-        
-          
-    
 
-        
-        Expand All
-    
-    @@ -156,9 +153,9 @@ addButton.addEventListener("click",ajaxRequest);
-  
 var ajaxRequest=function(){
   console.log("AJAX Request");
 }
+
 //The glue to hold it all together.
+
+
 //Set the click handler to the addTask function.
 addButton.onclick=addTask;
 addButton.addEventListener("click",addTask);
 addButton.addEventListener("click",ajaxRequest);
+
+
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
   console.log("bind list item events");
   //select ListItems children
@@ -196,17 +159,6 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 
 
   //Bind editTask to edit button.
-
-    
-        
-          
-    
-
-        
-        Expand All
-    
-    @@ -169,21 +166,21 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
-  
   editButton.onclick=editTask;
   //Bind deleteTask to delete button.
   deleteButton.onclick=deleteTask;
@@ -233,16 +185,9 @@ for (var i=0; i<completedTasksList.children.length;i++){
 
 
 
-    
-          
-            
-    
 
-          
-          Expand Down
-    
-    
-  
 // Issues with usability don"t get seen until they are in front of a human tester.
+
 //prevent creation of empty tasks.
+
 //Change edit to save when you are in edit mode.
