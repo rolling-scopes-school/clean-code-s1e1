@@ -22,10 +22,8 @@ var createNewTaskElement=function(taskString){
   //button.delete
   var deleteButton=document.createElement("button");//delete button
   var deleteButtonImg=document.createElement("img");//delete button image
-
   label.innerText=taskString;
   label.className="task";
-
   //Each elements, needs appending
   checkBox.type="checkbox";
   editInput.type="text";
@@ -35,9 +33,21 @@ var createNewTaskElement=function(taskString){
 
   deleteButton.className="delete";
   deleteButtonImg.src="./remove.svg";
+  deleteButtonImg.alt="delete Icon";
   deleteButton.appendChild(deleteButtonImg);
 
 
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
   //and appending.
   listItem.appendChild(checkBox);
   listItem.appendChild(label);
@@ -57,12 +67,11 @@ var addTask=function(){
   taskInput.value="";
 }
 //Edit an existing task.
-
 var editTask=function(){
   console.log("Edit Task...");
   console.log("Change "edit" to "save"");
   var listItem=this.parentNode;
-  var editInput=listItem.querySelector("input[type);
+  var editInput=listItem.querySelector("input[type=text]");
   var label=listItem.querySelector("label");
   var editBtn=listItem.querySelector(".edit");
   var containsClass=listItem.classList.contains("editMode");
@@ -81,7 +90,7 @@ var editTask=function(){
 };
 //Delete task.
 var deleteTask=function(){
-  console.log("Delete Task.");
+  console.log("Delete Task...");
   var listItem=this.parentNode;
   var ul=listItem.parentNode;
   //Remove the parent list item from the ul.
@@ -89,7 +98,7 @@ var deleteTask=function(){
 }
 //Mark task completed
 var taskCompleted=function(){
-  console.log("Complete Task.");
+  console.log("Complete Task...");
   //Append the task list item to the #completed-tasks
   var listItem=this.parentNode;
   completedTasksHolder.appendChild(listItem);
@@ -136,11 +145,6 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
   //bind events to list items chldren(tasksIncompleted)
   bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
-
-
-
 // Issues with usability don"t get seen until they are in front of a human tester.
-
 //prevent creation of empty tasks.
-
 //Change edit to save when you are in edit mode.
