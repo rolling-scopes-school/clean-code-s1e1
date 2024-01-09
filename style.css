@@ -84,7 +84,8 @@ button {
   text-transform: uppercase;
 }
 
-.item__input_text {
+.item__input_text,
+.add-item__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -97,7 +98,8 @@ button {
   color: #888;
 }
 
-.item__input_text:focus {
+.item__input_text:focus,
+.add-item__input:focus {
   color: #333;
 }
 
@@ -140,13 +142,17 @@ button {
   width: 226px;
 }
 
-.item__button_delete img {
+/* .item > .item__input_text {
+  width: 226px;
+} */
+
+.item__delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.item__button_delete img:hover {
+.item__delete-img:hover {
   transform: rotateZ(0);
 }
 
