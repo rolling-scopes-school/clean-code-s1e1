@@ -31,17 +31,17 @@
     width: 56%;
     display: inline-block;
     flex-grow: 1;
-    outline:none;
+    outline: none;
 }
 .main__box-task {
     display: flex;
 }
 .list {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 .list__item, .main__title {
-    list-style:none;
+    list-style: none;
 }
 
 .main__button-add, .list__button-edit, .list__button-delete {
@@ -52,7 +52,7 @@
     width: 60px;
     font-family: Lato, sans-serif;
     cursor: pointer;
-    outline:none;
+    outline: none;
 }
 .button-hover:hover {
     color: #3a3A3a;
@@ -145,14 +145,14 @@
 
 /* Edit Task */
 .list__task-input {
-    display:none
+    display: none
 }
 
 .list__task-input_text {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px
 }
 
 .list__ladel-task_hidden {
-    display:none;
+    display: none;
 }
