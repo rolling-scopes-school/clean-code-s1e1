@@ -16,22 +16,10 @@
 .header__link {
   font-family: fantasy, cursive;
 }
-
 @media (max-width: 768px) {
   .header { text-align: center;
   }
 }
-
-    
-        
-          
-    
-
-        
-        Expand All
-    
-    @@ -47,16 +47,16 @@
-  
 .main {
   display: block;
   width: 500px;
@@ -41,29 +29,10 @@
 .task__input {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
+
 .task_new {
-  display: flex;
-}
-.task__input_new {
-  display: inline-block;
-}
-
-ul {
-  margin: 0;
-  padding: 0px;
-}
-
-li {
-  list-style: none;
-}
-
-input,button{
-  outline: none;
-}
-
-.task__button {
 
     
           
@@ -79,8 +48,24 @@ input,button{
           
           Expand Up
     
-    @@ -159,14 +159,14 @@ h3 {
+    @@ -138,7 +138,7 @@ h3 {
   
+  display: flex;
+}
+.task__input_new {
+  display: inline-block;
+}
+ul {
+  margin: 0;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+input,button{
+  outline: none;
+}
+.task__button {
   background: none;
   border: 0px;
   color: #888;
@@ -146,10 +131,23 @@ h3 {
   font-size: 18px;
   width: 226px;
 }
+
 .task__input {
-  width: 226px
+  width: 226px;
 }
+
 .task__delete-img {
+
+    
+        
+          
+    
+
+        
+        Expand All
+    
+    @@ -153,18 +153,18 @@ h3 {
+  
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
@@ -157,22 +155,34 @@ h3 {
 .task__delete-img:hover {
   transform: rotateZ(0);
 }
+
 /* Completed */
 .task-list_completed .task__label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .task__input {
-  display: none
+  display: none;
 }
 
 .task_edit-mode .task__input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .task_edit-mode .task__label {
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
   display: none;
 }
