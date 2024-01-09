@@ -126,7 +126,7 @@
     width: 226px;
 }
 .list__task-input {
-    width: 226px
+    width: 226px;
 }
 .list__delete-img {
     height: 2em;
@@ -145,12 +145,12 @@
 
 /* Edit Task */
 .list__task-input {
-    display: none
+    display: none;
 }
 
 .list__task-input_text {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .list__ladel-task_hidden {
