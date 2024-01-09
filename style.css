@@ -7,6 +7,13 @@ body {
     margin: 0;
 }
 
+header {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
 header img {
     max-width: 100%;
     height: auto;
@@ -18,14 +25,6 @@ header img {
     text-decoration: none;
     display: block;
     margin-top: 10px;
-}
-
-/* Centering header elements for better responsiveness */
-header {
-    text-align: center;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px 0;
 }
 
 /* Task App Styles */
