@@ -38,20 +38,21 @@ body {
     align-items: center;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li, h3 {
+.task-list__item {
     list-style: none;
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-input, button {
+.task-input__field, .task-input__btn {
     outline: none;
 }
 
-button {
+.task-input__btn {
     background: none;
     border: 0;
     color: #888;
@@ -61,12 +62,12 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.task-input__btn:hover {
     color: #3a3a3a;
 }
 
 /* Heading */
-h3, label[for="task-input"] {
+.task-app__header > h3 {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -74,6 +75,11 @@ h3, label[for="task-input"] {
     padding: 30px 0 10px;
     margin: 0;
     text-transform: uppercase;
+}
+
+.task-app__header > label[for="task-input"] {
+    display: block;
+    margin: 0 0 20px;
 }
 
 .task-input__field {
@@ -94,15 +100,6 @@ h3, label[for="task-input"] {
 }
 
 /* Task list */
-.task-list__item {
-    overflow: hidden;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .task-list__item > * {
     vertical-align: middle;
 }
