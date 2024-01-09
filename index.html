@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task Management App</title>
+    <title>Task App</title>
     <link
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
       rel="stylesheet"
@@ -11,66 +11,60 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="header-container">
+    <section class="header">
       <img src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix" />
-      <a
-        class="learn-more-link"
-        href="https://goal-life.com/page/method/matrix-eisenhower"
-        >Learn more&quest;</a
-      >
+      <a class="link-more" href="https://goal-life.com/page/method/matrix-eisenhower">Learn more&quest;</a>
     </section>
 
-    <section class="task-manager">
-      <header class="task-manager__header">
-        <label for="new-task">Add New Task</label>
-        <div class="task-input-wrapper">
+    <section class="task-app">
+      <header class="task-app__header">
+        <label for="task-input">New Task</label>
+        <div class="task-input">
           <input
-            id="new-task"
-            class="task-input-wrapper__input"
+            id="task-input"
+            class="task-input__field"
             type="text"
             placeholder="Enter task..."
           />
-          <button class="task-input-wrapper__button">Add Task</button>
+          <button class="task-input__btn">Add</button>
         </div>
       </header>
 
-      <section class="task-list incomplete-tasks">
-        <h3>Incomplete Tasks</h3>
+      <section class="task-list incomplete">
+        <h3>Incomplete</h3>
         <ul class="task-list__items">
           <li class="task-list__item">
             <input type="checkbox" class="task-list__checkbox" />
-            <label class="task-list__task-name">Pay Bills</label>
+            <label class="task-list__name">Pay Bills</label>
             <input
               type="text"
-              class="task-list__edit-input"
+              class="task-list__edit"
               placeholder="Edit task..."
             />
-            <button class="task-list__edit-button">Edit</button>
-            <button class="task-list__delete-button">
-              <img src="./remove.svg" alt="Delete icon" />
+            <button class="task-list__edit-btn">Edit</button>
+            <button class="task-list__del-btn">
+              <img src="./remove.svg" alt="Delete" />
             </button>
           </li>
-          <!-- More task items can be added here -->
         </ul>
       </section>
 
-      <section class="task-list completed-tasks">
-        <h3>Completed Tasks</h3>
+      <section class="task-list completed">
+        <h3>Completed</h3>
         <ul class="task-list__items">
           <li class="task-list__item">
             <input type="checkbox" checked class="task-list__checkbox" />
-            <label class="task-list__task-name">See the Doctor</label>
+            <label class="task-list__name">See Doctor</label>
             <input
               type="text"
-              class="task-list__edit-input"
+              class="task-list__edit"
               placeholder="Edit task..."
             />
-            <button class="task-list__edit-button">Edit</button>
-            <button class="task-list__delete-button">
-              <img src="./remove.svg" alt="Delete icon" />
+            <button class="task-list__edit-btn">Edit</button>
+            <button class="task-list__del-btn">
+              <img src="./remove.svg" alt="Delete" />
             </button>
           </li>
-          <!-- More completed task items can be added here -->
         </ul>
       </section>
     </section>

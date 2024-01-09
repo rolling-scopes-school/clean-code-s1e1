@@ -4,42 +4,38 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-  
-.header-container {
+
+.header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.header-container img {
+.header img {
     width: 100%;
 }
 
-.learn-more-link {
+.link-more {
     font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-    .header-container {
+    .header {
         text-align: center;
     }
 }
 
-.task-manager {
+.task-app {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
 
-.task {
-    width: 56%;
-    display: inline-block;
-    flex-grow: 1;
-}
-
-.task-input-wrapper {
+.task-app__header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul {
@@ -70,7 +66,7 @@ button:hover {
 }
 
 /* Heading */
-h3, label[for="new-task"] {
+h3, label[for="task-input"] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -80,7 +76,7 @@ h3, label[for="new-task"] {
     text-transform: uppercase;
 }
 
-input[type="text"] {
+.task-input__field {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -93,18 +89,8 @@ input[type="text"] {
     color: #888;
 }
 
-input[type="text"]:focus {
+.task-input__field:focus {
     color: #333;
-}
-
-/* New Task */
-label[for="new-task"] {
-    display: block;
-    margin: 0 0 20px;
-}
-
-.task-input-wrapper__input {
-    width: 318px;
 }
 
 /* Task list */
@@ -125,43 +111,43 @@ label[for="new-task"] {
     margin: 0 10px;
 }
 
-.task-list__task-name {
+.task-list__name {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-.task-list__edit-input {
+.task-list__edit {
     width: 226px;
 }
 
-.task-list__delete-button img {
+.task-list__del-btn img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.task-list__delete-button img:hover {
+.task-list__del-btn img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-.task-list.completed-tasks .task-list__task-name {
+.task-list.completed .task-list__name {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-.task-list__edit-input {
+.task-list__edit {
     display: none;
 }
 
-.task-list__item--edit-mode .task-list__edit-input {
+.task-list__item--edit-mode .task-list__edit {
     display: inline-block;
     width: 224px;
 }
 
-.task-list__item--edit-mode .task-list__task-name {
+.task-list__item--edit-mode .task-list__name {
     display: none;
 }
