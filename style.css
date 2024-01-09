@@ -17,23 +17,22 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .header { text-align: center;
   }
 }
 
-.main {
-
     
+        
           
-            
     
 
-          
-          Expand Down
+        
+        Expand All
     
-    
+    @@ -47,16 +47,16 @@
   
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -50,17 +49,38 @@
 .task__input_new {
   display: inline-block;
 }
+
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
+
 li {
-  list-style:none;
+  list-style: none;
 }
+
 input,button{
-  outline:none;
+  outline: none;
 }
+
 .task__button {
+
+    
+          
+            
+    
+
+          
+          Expand Down
+          
+            
+    
+
+          
+          Expand Up
+    
+    @@ -159,14 +159,14 @@ h3 {
+  
   background: none;
   border: 0px;
   color: #888;
@@ -142,14 +162,17 @@ h3 {
   text-decoration: line-through
   color: #888;
 }
+
 /* Edit Task */
 .task__input {
-  display:none
+  display: none
 }
+
 .task_edit-mode .task__input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
+
 .task_edit-mode .task__label {
-  display:none;
+  display: none;
 }
