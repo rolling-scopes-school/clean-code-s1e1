@@ -2,7 +2,7 @@
 body {
     background-color: #f8f8f8;
     color: #333;
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .header {
@@ -29,7 +29,7 @@ body {
 .task-app {
     display: block;
     width: 500px;
-    margin: 0 auto 0;
+    margin: 0 auto;
 }
 
 .task-app__header {
@@ -58,7 +58,7 @@ body {
     color: #888;
     font-size: 15px;
     width: 60px;
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', sans-serif;
     cursor: pointer;
 }
 
@@ -91,7 +91,7 @@ body {
     border: 1px solid #ddd;
     background: #fff;
     border-radius: 6px;
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #888;
 }
 
@@ -117,6 +117,7 @@ body {
 
 .task-list__edit {
     width: 226px;
+    display: none;
 }
 
 .task-list__del-btn img {
@@ -136,13 +137,8 @@ body {
 }
 
 /* Edit Task */
-.task-list__edit {
-    display: none;
-}
-
 .task-list__item--edit-mode .task-list__edit {
     display: inline-block;
-    width: 224px;
 }
 
 .task-list__item--edit-mode .task-list__name {
