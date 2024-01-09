@@ -57,10 +57,21 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for='new-task'] {
+label[for="new-task"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
+
+    
+        
+          
+    
+
+        
+        Expand All
+    
+    @@ -84,7 +84,7 @@ input[type="text"]:focus {
+  
   border-bottom: 2px solid #333;
   padding: 30px 0 10px;
   margin: 0;
@@ -81,11 +92,23 @@ input[type="text"] {
 input[type="text"]:focus {
   color: #333;
 }
+
 /* New Task */
-label[for='new-task'] {
+label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
 input#new-task {
   width: 318px;
 }
