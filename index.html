@@ -12,10 +12,10 @@
   </header>
   <main class="main-page">
     <section id="top-section main-top-section">
-      <label class="top-section-lable" for="new-task">Add Item</label>
+      <label class="top-section-label" for="new-task">Add Item</label>
         <div class="top-section-block">
-          <input id="new-task" class="top-section-input" type="text">
-          <button class="top-section-button">Add</button>
+          <input id="new-task" class="task top-section-input" type="text">
+          <button class="task-list-button top-section-button">Add</button>
         </div>
     </section>
     <h3 class="title-text">Todo</h3>
@@ -30,12 +30,12 @@
         </button>
       </li>
       <li class="task-list-item task-list-item-edit">
-        <input type="checkbox">
-        <label class="task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="task">
-        <button class="edit">Save</button>
-        <button class="delete">
-          <img src="./remove.svg" alt="remove">
+        <input class="task-list-checkbox" type="checkbox">
+        <label class="task task-list-label">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="task task-list-input">
+        <button class="task-list-button task-list-button-edit">Save</button>
+        <button class="task-list-button task-list-button-delete">
+          <img class="button-img" src="./remove.svg" alt="remove">
         </button>
       </li>
     </ul>
