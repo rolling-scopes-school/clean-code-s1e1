@@ -11,40 +11,40 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8" />
   </head>
   <body>
-    <div class="aaa">
-      <img src="./eisenhower-matrix.jpg" />
+    <header class="details">
+      <img src="./eisenhower-matrix.jpg" class="details-img" alt="matrix" />
       <a
-        class="more_inf"
+        class="details-more__inf"
         href="https://goal-life.com/page/method/matrix-eisenhower"
         >Want more details?</a
       >
-    </div>
-    <div class="centered-main-page-element">
-      <div id="topSectionForAddingElementToList">
+    </header>
+    <main class="main-container">
+      <div id="add-container">
         <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
+        <div class="task-row__wrapper">
           <input id="new-task" class="task" type="text" />
           <button>Add</button>
         </div>
       </div>
       <h3>Todo</h3>
-      <ul id="incompleteTasks">
+      <ul id="incomplete-tasks">
         <li>
           <input type="checkbox" />
           <label class="task">Pay Bills</label>
           <input type="text" class="task" />
           <button class="edit">Edit</button>
           <button class="delete">
-            <img src="./remove.svg" />
+            <img src="./remove.svg" alt="delete" />
           </button>
         </li>
-        <li class="editMode">
+        <li class="edit-mode">
           <input type="checkbox" />
           <label class="task">Go Shopping</label>
           <input type="text" value="Go Shopping" class="task" />
           <button class="edit">Save</button>
           <button class="delete">
-            <img src="./remove.svg" />
+            <img src="./remove.svg" alt="delete" />
           </button>
         </li>
       </ul>
@@ -56,11 +56,11 @@
           <input type="text" class="task" />
           <button class="edit">Edit</button>
           <button class="delete">
-            <img src="./remove.svg" />
+            <img src="./remove.svg" alt="delete" />
           </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
