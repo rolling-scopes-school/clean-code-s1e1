@@ -97,7 +97,7 @@ label[for='new-task'] {
 }
 
 /* Task list */
-.main__item {
+.li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -106,20 +106,20 @@ label[for='new-task'] {
     justify-content: space-between;
     align-items: center;
 }
-.main__item > * {
+.li > * {
     vertical-align: middle;
 }
 
-.main__item > input[type="checkbox"] {
+.li > input[type="checkbox"] {
     margin: 0 10px;
 }
-.main__item > label {
+.li > label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-.main__item > input[type="text"] {
+.li > input[type="text"] {
     width: 226px;
 }
 .main__button-delete img {
@@ -138,7 +138,7 @@ label[for='new-task'] {
 }
 
 /* Edit Task */
-.main__item input[type=text] {
+.li input[type=text] {
     display: none;
 }
 
