@@ -18,28 +18,28 @@ input,button{
   outline: none;
 }
 
-.block-info {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.block-info img {
+.header img {
   width: 100%;
 }
 
-.block-info .more-info {
+.header-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .block-info { 
+  .header-info { 
     text-align: center;
   }
 }
 
-.block-content {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
