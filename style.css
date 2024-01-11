@@ -4,47 +4,45 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.header {
+.aaa {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.header-img {
+.aaa img {
   width: 100%;
 }
-.more-inf {
+.aaa .more_inf {
   font-family: fantasy, cursive;
 }
-@media (max-width: 768px) {
-  .header {
-    text-align: center;
-  }
+
+@media (max-width:768px) {
+.aaa { text-align: center;
 }
-.main {
+}
+.centered-main-page-element {
   display: block;
-  max-width: 500px;
+  width: 500px;
   margin: 0 auto 0;
 }
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1;
+  flex-grow: 1
 }
-.task-wrapper {
+.task-row-wrapper {
   display: flex;
 }
 ul {
-  margin: 0;
+  margin:0;
   padding: 0px;
 }
-li,
-h3 {
-  list-style: none;
+li, h3 {
+  list-style:none;
 }
-input,
-button{
-  outline: none;
+input,button{
+  outline:none;
 }
 button {
   background: none;
@@ -52,17 +50,15 @@ button {
   color: #888;
   font-size: 15px;
   width: 60px;
-  height: 20px;
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
 button:hover {
-  color: #3a3a3a;
+  color: #3a3A3a;
 }
 /* Heading */
-h1,
 h3,
-label[for="new-task"] {
+label[for='new-task'] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -77,8 +73,8 @@ input[type="text"] {
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #ddd;
-  background: #fff;
+  border: 1px solid #dDd;
+  background: #FFF;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
@@ -88,12 +84,11 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-h1,
-label[for="new-task"] {
+label[for='new-task'] {
   display: block;
   margin: 0 0 20px;
 }
-#new-task {
+input#new-task {
   width: 318px;
 }
 
@@ -102,6 +97,7 @@ li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,7 +105,8 @@ li {
 li > * {
   vertical-align: middle;
 }
-.checkbox-input {
+
+li > input[type="checkbox"] {
   margin: 0 10px;
 }
 li > label {
@@ -118,48 +115,34 @@ li > label {
   font-size: 18px;
   width: 226px;
 }
-/*li > input[type="text"] {
-  width: 226px;
-}*/
-/*button.delete img {
+li >    input[type="text"] {
+  width: 226px
+}
+button.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 button.delete img:hover {
   transform: rotateZ(0);
-}*/
-.delete {
-  height: 2em;
-  transform: rotateZ(45deg);
-  transition: transform 200ms ease-in;
-}
-.delete:hover {
-  transform: rotateZ(0);
 }
 
 /* Completed */
-/*ul#completed-tasks label {
-  text-decoration: line-through;
-  color: #888;
-}*/
-.task-complated {
+ul#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
-
 
 /* Edit Task */
-/*ul li input[type=text] {
-  display: none;
+ul li input[type=text] {
+  display:none
 }
-/*ul li.editMode input[type=text] {
-  display: inline-block;
-  width: 224px;
-}*/
-.task-edit-input {
-  width: 226px;
+
+ul li.editMode input[type=text] {
+  display:inline-block;
+  width:224px
 }
-.task-edit-label {
-  display: none;
+
+ul li.editMode label {
+  display:none;
 }
