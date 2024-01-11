@@ -18,8 +18,8 @@ body {
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
-}
+  .aaa { text-align: center;
+  }
 }
 .centered-main-page-element {
   display: block;
@@ -91,7 +91,6 @@ label[for='new-task'] {
 input#new-task {
   width: 318px;
 }
-
 /* Task list */
 li {
   overflow: hidden;
