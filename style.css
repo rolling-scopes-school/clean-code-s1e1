@@ -68,10 +68,6 @@ button {
   cursor: pointer;    
 }
 
-.task-list-button:hover {
-  color: #3a3a3a;
-}
-
 /* Heading */
 .title-text,
 .top-section-label {
@@ -101,12 +97,6 @@ button {
 .task task-list-input:focus,
 .top-section-input:focus {
   color: #333;
-}
-
-/* New Task */
-.top-section-label {
-  display: block;
-  margin: 0 0 20px;
 }
 
 .top-section-input {
