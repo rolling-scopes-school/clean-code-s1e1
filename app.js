@@ -35,6 +35,7 @@ for (let i = 0, j = completedTasksHolder.children.length; i < j; i++) {
 //New task list item
 function createNewTaskElement(taskString) {
   const listItem = document.createElement("li");
+  listItem.className = "tasks-list__item";
 
   //input (checkbox)
   const checkBox = document.createElement("input"); //checkbx
@@ -50,12 +51,14 @@ function createNewTaskElement(taskString) {
   const deleteButtonImg = document.createElement("img"); //delete button image
 
   label.innerText = taskString;
-  label.className = "todo__task";
+  label.className = "todo__task  todo__label";
 
   //Each elements, needs appending
   checkBox.type = "checkbox";
+  checkBox.className = "tasks-list__current";
+
   editInput.type = "text";
-  editInput.className = "todo__task";
+  editInput.className = "todo__task todo__task--input";
 
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
   editButton.className = "todo__button";
