@@ -26,13 +26,15 @@
     </div>
     <div class="main-page_centered">
       <div id="add-element-section">
-        <label for="new-task">Add Item</label>
+        <label class="add-element-section__label" for="new-task"
+          >Add Item</label
+        >
         <div class="task-row-wrapper">
-          <input id="new-task" class="main-page__task" type="text" />
-          <button>Add</button>
+          <input id="new-task" class="main-page__add-task" type="text" />
+          <button class="main-page__add-btn">Add</button>
         </div>
       </div>
-      <h3>Todo</h3>
+      <h3 class="main-page__title">Todo</h3>
       <ul id="incompleted-tasks">
         <li class="task-item">
           <input class="task-completion" type="checkbox" />
@@ -54,7 +56,7 @@
         </li>
       </ul>
 
-      <h3>Completed</h3>
+      <h3 class="main-page__title">Completed</h3>
       <ul id="completed-tasks">
         <li class="task-item">
           <input class="task-completion" type="checkbox" checked />
