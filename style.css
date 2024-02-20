@@ -15,7 +15,7 @@ body {
   width: 100%;
 }
 
-.header .more_info {
+.header .additional_information {
   font-family: fantasy, cursive;
 }
 
@@ -138,13 +138,13 @@ li > input[type="text"] {
   width: 226px;
 }
 
-.delete-button img {
+.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-button img:hover {
+.delete img:hover {
   transform: rotateZ(0);
 }
 
