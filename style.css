@@ -5,21 +5,21 @@
   font-family: Lato, sans-serif;
 }
 
-.main-content {
+.introductory {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.main-content__img {
+.introductory__img {
   width: 100%;
 }
-.main-content__more-info {
+.introductory__more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .main-content { 
+  .introductory { 
     text-align: center;
   }
 }
