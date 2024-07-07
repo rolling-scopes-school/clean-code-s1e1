@@ -138,7 +138,7 @@
 }
 
 /* Edit Task */
-.input__type-text {
+.unordered-list .input__type-text {
   display: none;
 }
 
