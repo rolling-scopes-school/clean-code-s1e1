@@ -7,7 +7,7 @@
 
 .header {
   width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 14px;
   display: block;
   text-align: right;
 }
@@ -20,8 +20,12 @@
   font-family: fantasy, cursive;
 }
 
+#add-item-section {
+  margin-bottom: 12px;
+}
+
 @media (max-width: 768px) {
-    .header { 
+    .header {
       text-align: center;
     }
 }
@@ -47,8 +51,7 @@
   padding: 0px;
 }
 
-.list-item,
-.heading {
+.list-item {
   list-style: none;
 }
 
@@ -72,6 +75,15 @@
 }
 
 /* Heading */
+.hidden {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .heading,
 .new-task-label {
   color: #333;
