@@ -47,11 +47,13 @@
   padding: 0px;
 }
 
-.list-item, .heading {
+.list-item,
+.heading {
   list-style: none;
 }
 
-.input, .button{
+.input,
+.button{
   outline: none;
 }
 
@@ -118,7 +120,9 @@
   align-items: center;
 }
 
-.list-item > .input, .list-item > .label, .list-item > .button {
+.list-item > .input,
+.list-item > .label,
+.list-item > .button {
   vertical-align: middle;
 }
 
