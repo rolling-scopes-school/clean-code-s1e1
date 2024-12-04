@@ -4,45 +4,15 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
-    width: 500px;
-    margin: 0 auto;
-    display: block;
-    text-align: right;
-}
-.aaa img {
-    width: 100%;
-}
-.aaa .more_inf {
-    font-family: fantasy, cursive;
-}
-
-@media (max-width:768px) {
-.aaa { text-align: center;
-}
-}
-.centered-main-page-element {
-    display: block;
-    width: 500px;
-    margin: 0 auto 0;
-}
-.task {
-    width: 56%;
-    display: inline-block;
-    flex-grow: 1
-}
-.task-row-wrapper {
-    display: flex;
-}
 ul {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 li, h3 {
-    list-style:none;
+    list-style: none;
 }
 input,button{
-    outline:none;
+    outline: none;
 }
 button {
     background: none;
@@ -58,7 +28,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for='new-task'] {
+  label[for="new-task"] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -67,7 +37,7 @@ label[for='new-task'] {
     margin: 0;
     text-transform: uppercase;
 }
-input[type="text"] {
+  input[type="text"] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -79,19 +49,18 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+  input[type="text"]:focus {
     color: #333;
 }
 
 /* New Task */
-label[for='new-task'] {
+label[for="new-task"] {
     display: block;
     margin: 0 0 20px;
 }
 input#new-task {
     width: 318px;
 }
-
 /* Task list */
 li {
     overflow: hidden;
@@ -126,23 +95,57 @@ button.delete img {
 button.delete img:hover {
     transform: rotateZ(0);
 }
-
 /* Completed */
-ul#completed-tasks label {
-    text-decoration: line-through
+#completed-tasks label {
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 ul li input[type=text] {
-    display:none
+    display: none
 }
 
-ul li.editMode input[type=text] {
-    display:inline-block;
-    width:224px
+ul li.edit-mode input[type=text] {
+    display: inline-block;
+    width: 224px
 }
 
-ul li.editMode label {
-    display:none;
+ul li.edit-mode label {
+    display: none;
 }
+.more-info {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    text-align: right;
+}
+.more-info img {
+    width: 100%;
+}
+.more-info .more-inf {
+    font-family: fantasy, cursive;
+}
+
+@media (max-width:768px) {
+  .more-info { text-align: center;
+  }
+}
+.main-element {
+    display: block;
+    width: 500px;
+    margin: 0 auto 0;
+}
+.task {
+    width: 56%;
+    display: inline-block;
+    flex-grow: 1
+}
+.task-wrapper {
+    display: flex;
+}
+
+
+
+
+
