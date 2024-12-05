@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.description img {
+.description__img {
   width: 100%;
 }
-.more_inf {
+.description__more-inf {
   font-family: fantasy, cursive;
 }
 @media (max-width:768px) {
@@ -21,7 +21,7 @@ body {
     text-align: center;
   }
 }
-.main-el {
+.main_el {
   display: block;
   width: 500px;
   margin: 0 auto 0;
