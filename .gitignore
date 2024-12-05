@@ -1,0 +1,10 @@
+# Игнорируем все файлы и папки по умолчанию
+*
+
+# Не игнорируем указанные файлы
+!app.js
+!eisenhower-matrix.jpg
+!index.html
+!README.md
+!remove.svg
+!style.css
