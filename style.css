@@ -21,7 +21,7 @@ body {
     text-align: center;
   }
 }
-.main_el {
+.todo-app {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -31,7 +31,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.add-task__input-wrapper {
   display: flex;
 }
 ul {
@@ -52,7 +52,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="new_task"] {
+label[for="new-task"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -77,11 +77,11 @@ input[type="text"]:focus {
   color: #333;
 }
 /* New Task */
-label[for="new_task"] {
+label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
-#new_task {
+#new-task {
   width: 318px;
 }
 /* Task list */
@@ -108,12 +108,12 @@ li > label {
 li > input[type="text"] {
   width: 226px;
 }
-.del img {
+.tasks-list__button_del img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.del img:hover {
+.tasks-list__button_del img:hover {
   transform: rotateZ(0);
 }
 /* Completed */
