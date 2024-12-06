@@ -125,10 +125,10 @@ li > input[type="text"] {
 ul li input[type=text] {
   display: none;
 }
-ul li.edit_mode input[type=text] {
+ul li.tasks-list__item_edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
-ul li.edit_mode label {
+ul li.tasks-list__item_edit-mode label {
   display: none;
 }
