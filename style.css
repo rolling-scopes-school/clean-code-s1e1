@@ -154,11 +154,11 @@ ul li input[type=text] {
   display: none;
 }
 
-.edit-mode input[type=text] {
+.edit__mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.edit__mode label {
   display: none;
 }
