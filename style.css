@@ -1,7 +1,12 @@
+:root {
+  --bg-color: #f8f8f8;
+  --font-color: #333;
+}
+
 /* Basic Style */
 body {
-  background-color: #f8f8f8;
-  color: #333;
+  background-color: var(--bg-color);
+  color: var(--font-color);
   font-family: Lato, sans-serif;
 }
 
@@ -72,10 +77,10 @@ button {
 /* Heading */
 h3,
 label[for="new-task"] {
-  color: #333;
+  color: var(--font-color);
   font-weight: 700;
   font-size: 15px;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--font-color);
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
@@ -94,7 +99,7 @@ input[type="text"] {
   color: #888;
 
   &:focus {
-    color: #333;
+    color: var(--font-color);
   }
 }
 
