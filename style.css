@@ -18,8 +18,9 @@ body {
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
-}
+  .aaa {
+    text-align: center;
+  }
 }
 .centered-main-page-element {
   display: block;
@@ -68,7 +69,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 input[type="text"] {
-   margin: 0;
+  margin: 0;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
