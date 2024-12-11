@@ -26,7 +26,7 @@ body {
   }
 }
 
-.centered-main-page-element {
+.more-inf-main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -38,7 +38,7 @@ body {
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.task-row-wrap {
   display: flex;
 }
 
@@ -140,18 +140,18 @@ li > input[type="text"] {
   width: 226px;
 }
 
-button.delete-btn img {
+button.del-btn img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete-btn img:hover {
+button.del-btn img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#compl-tasks label {
   text-decoration: line-through;
   color: #888;
 }
