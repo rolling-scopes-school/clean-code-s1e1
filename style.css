@@ -13,7 +13,7 @@ body {
 .todo-app__header img {
   width: 100%;
 }
-.todo-app__header .more-inf {
+.todo-app__header .more_inf {
   font-family: fantasy, cursive;
 }
 
@@ -21,7 +21,7 @@ body {
 .todo-app__header { text-align: center;
 }
 }
-.todo-app__main {
+.centered-main-page-element {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -128,7 +128,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#todo-app_completed-tasks label {
+ul#completed-tasks label {
   text-decoration: line-through
     color: #888;
 }
