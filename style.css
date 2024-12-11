@@ -4,24 +4,24 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.todo-app__header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.todo-app__header img {
   width: 100%;
 }
-.aaa .more_inf {
+.todo-app__header .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.todo-app__header { text-align: center;
 }
 }
-.centered-main-page-element {
+.todo-app__main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -128,7 +128,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#todo-app_completed-tasks label {
   text-decoration: line-through
     color: #888;
 }
@@ -138,11 +138,11 @@ ul li input[type=text] {
   display:none
 }
 
-ul li.editMode input[type=text] {
+ul li.edit-mode input[type=text] {
   display:inline-block;
   width:224px
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
   display:none;
 }
