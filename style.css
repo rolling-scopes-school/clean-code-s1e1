@@ -4,16 +4,16 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.picture-block {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.picture-block img {
   width: 100%;
 }
-.aaa .more_inf {
+.picture-block .picture-block-link  {
   font-family: fantasy, cursive;
 }
 
@@ -21,17 +21,17 @@ body {
   .aaa { text-align: center;
   }
 }
-.centered-main-page-element {
+.form-block {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.input-task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.add-item-text {
   display: flex;
 }
 ul {
@@ -41,7 +41,7 @@ ul {
 li, h3 {
   list-style:none;
 }
-input,button{
+input, button{
   outline:none;
 }
 button {
