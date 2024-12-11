@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -34,7 +34,7 @@ body {
 .task-row-wrapper {
   display: flex;
 }
-ul {
+.list-block {
   margin:0;
   padding: 0px;
 }
@@ -134,15 +134,15 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.list-block li input[type=text] {
   display:none
 }
 
-ul li.edit-mode input[type=text] {
+.list-block li.edit-mode input[type=text] {
   display:inline-block;
   width:224px
 }
 
-ul li.edit-mode label {
+.list-block li.edit-mode label {
   display:none;
 }
