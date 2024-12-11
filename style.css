@@ -1,6 +1,5 @@
 /* Basic Style */
-
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -23,7 +22,7 @@ body {
 
 @media (max-width: 768px) {
 
-  .header { 
+  .header {
     text-align: center;
   }
 
@@ -39,22 +38,23 @@ body {
   display: flex;
 }
 
-ul {
+.list {
   margin: 0;
   padding: 0px;
 }
 
-li,
-h3 {
+.list__item,
+.heading {
   list-style: none;
 }
 
-input,
-button{
+.list__checkbox,
+.task-input,
+.button {
   outline: none;
 }
 
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -64,12 +64,11 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-
 .heading {
   color: #333;
   font-weight: 700;
@@ -86,7 +85,7 @@ button:hover {
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-	border: 1px solid #ddd;
+  border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
@@ -99,7 +98,6 @@ button:hover {
 }
 
 /* New Task */
-
 .list__text,
 .task-input {
   width: 56%;
@@ -115,13 +113,11 @@ button:hover {
 }
 
 .add-tasks__heading {
-  display: block;
   margin: 0 0 20px;
 }
 
 /* Task list */
-
-li {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -130,44 +126,38 @@ li {
   align-items: center;
 }
 
-li > * {
+.list__item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.list__checkbox {
   margin: 0 10px;
 }
 
-li > label {
+.list__text {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type="text"] {
-  width: 226px;
-}
-
-button.delete img {
+.button.delete .button__icon_delete {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.button.delete .button__icon_delete:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-
-ul#completed-tasks label {
+.execute-tasks__list .list__text {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-
 .task-input {
   display: none;
 }
