@@ -20,7 +20,8 @@ body {
 }
 
 @media (max-width:768px) {
-  .picture-block { text-align: center;
+  .picture-block { 
+    text-align: center;
   }
 }
 
