@@ -5,44 +5,46 @@ body {
     font-family: Lato, sans-serif;
 }
 
-.aaa {
+.matrix-info-section {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.aaa img {
+.matrix-info-section img {
     width: 100%;
 }
 
-.aaa .more-inf {
+.matrix-info-section .matrix-info-link {
     font-family: fantasy, cursive;
 }
 
-.title {
+.app-title {
     display: none;
 }
 
 @media (max-width: 768px) {
-    .aaa {
+    .matrix-info-section {
         text-align: center;
     }
 }
 
-.centered-main-page-element {
+.todo-app {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
 
-.task {
+.new-task-input,
+.task-label,
+.task-edit-input {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
 }
 
-.task-row-wrapper {
+.new-task-input-wrapper {
     display: flex;
 }
 
@@ -143,13 +145,13 @@ li>input[type="text"] {
     width: 226px;
 }
 
-button.delete img {
+button.delete-task-button img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+button.delete-task-button img:hover {
     transform: rotateZ(0);
 }
 
@@ -164,11 +166,11 @@ ul li input[type=text] {
     display: none;
 }
 
-ul li.edit-mode input[type=text] {
+ul li.edit-task-item input[type=text] {
     display: inline-block;
     width: 224px;
 }
 
-ul li.edit-mode label {
+ul li.edit-task-item label {
     display: none;
 }

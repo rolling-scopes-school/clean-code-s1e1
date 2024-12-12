@@ -8,39 +8,39 @@
 </head>
 
 <body>
-  <header class="aaa">
+  <header class="matrix-info-section">
     <img src="./eisenhower-matrix.jpg"
       alt="Eisenhower Matrix with four quadrants for task prioritization: urgent/important, important, urgent, and neither.">
-    <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <a class="matrix-info-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main>
-    <article class="centered-main-page-element">
-      <h1 class="title">Todo App</h1>
-      <section id="top-section-for-adding-element-to-list">
+    <article class="todo-app">
+      <h1 class="app-title">Todo App</h1>
+      <section id="task-input-section">
         <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task" class="task" type="text">
+        <div class="new-task-input-wrapper">
+          <input id="new-task" class="new-task-input" type="text">
           <button>Add</button>
         </div>
       </section>
       <section>
         <h2>Todo</h2>
-        <ul id="incomplete-tasks">
+        <ul id="todo-tasks">
           <li>
             <input type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
+            <label class="task-label">Pay Bills</label>
+            <input type="text" class="task-edit-input">
+            <button class="edit-task-button">Edit</button>
+            <button class="delete-task-button">
               <img src="./remove.svg" alt="Cross icon indicating delete task functionality.">
             </button>
           </li>
-          <li class="edit-mode">
+          <li class="edit-task-item">
             <input type="checkbox">
-            <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete">
+            <label class="task-label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="task-edit-input">
+            <button class="edit-task-button">Save</button>
+            <button class="delete-task-button">
               <img src="./remove.svg" alt="Cross icon indicating delete task functionality.">
             </button>
           </li>
@@ -51,10 +51,10 @@
         <ul id="completed-tasks">
           <li>
             <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
+            <label class="task-label">See the Doctor</label>
+            <input type="text" class="task-edit-input">
+            <button class="edit-task-button">Edit</button>
+            <button class="delete-task-button">
               <img src="./remove.svg" alt="Cross icon indicating delete task functionality.">
             </button>
           </li>
