@@ -1,28 +1,24 @@
-/* Basic Style */
 body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .picture {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .picture__img {
   width: 100%;
 }
+
 .picture__link {
   font-family: fantasy, cursive;
   display: flex;
   justify-content: end;
-}
-
-@media (max-width: 768px) {
-  .picture { 
-    text-align: center;
-  }
 }
 
 .form {
@@ -30,26 +26,32 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
+
 .form__input_task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .form__add_text {
   display: flex;
 }
+
 .form__items {
   margin: 0;
   padding: 0px;
 }
+
 .form__item, 
 .form__title {
   list-style: none;
 }
+
 .form__input, 
 .form__button {
   outline: none;
 }
+
 .form__button {
   background: none;
   border: 0px;
@@ -59,10 +61,11 @@ body {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .form__button:hover {
   color: #3a3a3a;
 }
-/* Heading */
+
 .form__title,
 .form__new_task {
   color: #333;
@@ -73,6 +76,7 @@ body {
   margin: 0;
   text-transform: uppercase;
 }
+
 .form__input {
   margin: 0;
   font-size: 18px;
@@ -85,15 +89,16 @@ body {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .form__input:focus {
   color: #333;
 }
 
-/* New Task */
 .form__new_task {
   display: block;
   margin: 0 0 20px;
 }
+
 .input-new-task {
   width: 318px;
 }
@@ -102,7 +107,6 @@ body {
   width: 347px;
 }
 
-/* Task list */
 .form__item {
   overflow: hidden;
   padding: 20px 0;
@@ -111,6 +115,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .form__item > * {
   vertical-align: middle;
 }
@@ -118,12 +123,13 @@ body {
 .form__checkbox {
   margin: 0 10px;
 }
+
 .task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  /* width: 226px; */
 }
+
 .form__input_task {
   width: 226px
 }
@@ -132,17 +138,16 @@ height: 2em;
 transform: rotateZ(45deg);
 transition: transform 200ms ease-in;
 }
+
 .form__img_delete:hover {
   transform: rotateZ(0);
 }
 
-/* Completed */
 #completed-tasks .task {
   text-decoration: line-through;
   color: #888;
 }
 
-/* Edit Task */
 .form__input_task:not(.form__add_input) {
   display: none
 }
@@ -154,4 +159,10 @@ transition: transform 200ms ease-in;
 
 .form__edit_mode .form__label {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .picture { 
+    text-align: center;
+  }
 }
