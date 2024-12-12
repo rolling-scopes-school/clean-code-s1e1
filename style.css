@@ -93,7 +93,7 @@ label[for='new-task'] {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
   width: 318px;
 }
 
@@ -134,8 +134,7 @@ img:hover {
 }
 
 /* Completed */
-ul#completed-tasks
-label {
+#completed-tasks {
   text-decoration: line-through;
   color: #888;
 }
@@ -147,8 +146,7 @@ input[type=text] {
   display: none;
 }
 
-ul
-li.editMode
+.editMode
 input[type=text] {
   display: inline-block;
   width: 224px;
