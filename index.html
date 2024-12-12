@@ -6,51 +6,51 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body>
-  <section class="picture-block">
-    <img class="picture-block-img" src="./eisenhower-matrix.jpg" alt="picture">
-    <a class="picture-block-link" 
+  <section class="picture">
+    <img class="picture__img" src="./eisenhower-matrix.jpg" alt="picture">
+    <a class="picture__link" 
     href="https://goal-life.com/page/method/matrix-eisenhower">
-      Want more details?
+    Want more details?
     </a>
   </section>
-  <section class="form-block">
+  <section class="form">
     <div id="add-item">
-      <label class="label-new-task label" for="new-task">Add Item</label>
-      <div class="add-item-text">
-        <input id="new-task" class="input-task input add-input" type="text">
-        <button class="button">Add</button>
+      <label class="form__new_task form__label" for="new-task">Add Item</label>
+      <div class="form__add_text">
+        <input id="new-task" class="form__input_task form__input form__add_input" type="text">
+        <button class="form__button">Add</button>
       </div>
     </div>
-    <h3 class="title">Todo</h3>
-    <div class="ul" id="incomplete-tasks">
-      <div class="li">
-        <input  type="checkbox" class="input checkbox">
-        <label class="task label" for="incomplete">Pay Bills</label>
-        <input type="text" class="input-task input" id="incomplete">
-        <button class="button edit">Edit</button>
-        <button class="button delete">
-          <img class="img-delete" src="./remove.svg" alt="picture-del">
+    <h3 class="form__title">Todo</h3>
+    <div class="form__items" id="incomplete-tasks">
+      <div class="form__item">
+        <input  type="checkbox" class="form__input form__checkbox">
+        <label class="task form__label" for="incomplete">Pay Bills</label>
+        <input type="text" class="form__input_task form__input" id="incomplete">
+        <button class="form__button form__button_edit">Edit</button>
+        <button class="form__button form__button_delete">
+          <img class="form__img_delete" src="./remove.svg" alt="picture-del">
         </button>
       </div>
-      <div class="edit-mode li">
-        <input type="checkbox" class="input checkbox">
-        <label class="task label" for="edit">Go Shopping</label>
-        <input type="text" value="go shopping" class="input-task input" id="edit">
-        <button class="button edit">Save</button>
-        <button class="button delete">
-          <img class="img-delete" src="./remove.svg" alt="picture-del">
+      <div class="form__edit_mode form__item">
+        <input type="checkbox" class="form__input form__checkbox">
+        <label class="task form__label" for="edit">Go Shopping</label>
+        <input type="text" value="go shopping" class="form__input_task form__input" id="edit">
+        <button class="form__button form__button_edit">Save</button>
+        <button class="form__button form__button_delete">
+          <img class="form__img_delete" src="./remove.svg" alt="picture-del">
         </button>
       </div>
     </div>
-    <h3 class="title">Completed</h3>
-    <div class="ul" id="completed-tasks">
-      <div class="li">
-        <input type="checkbox" checked class="input checkbox">
-        <label class="task label" for="complete">See the Doctor</label>
-        <input type="text" class="input-task input" id="complete">
-        <button class="button edit">Edit</button>
-        <button class="button delete">
-          <img class="img-delete" src="./remove.svg">
+    <h3 class="form__title">Completed</h3>
+    <div class="form__items" id="completed-tasks">
+      <div class="form__item">
+        <input type="checkbox" checked class="form__input form__checkbox">
+        <label class="task form__label" for="complete">See the Doctor</label>
+        <input type="text" class="form__input_task form__input" id="complete">
+        <button class="form__button form__button_edit">Edit</button>
+        <button class="form__button form__button_delete">
+          <img class="form__img_delete" src="./remove.svg">
         </button>
       </div>
     </div>
