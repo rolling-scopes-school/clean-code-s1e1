@@ -1,26 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
 :root {
   --bg-color: #f8f8f8;
   --font-color: #333;
-}
-
-/* Basic Style */
-body {
   background-color: var(--bg-color);
   color: var(--font-color);
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+/* Basic Style */
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 
-  img {
+  .header__logo {
     width: 100%;
   }
 
-  .more_inf {
+  .header__link {
     font-family: Charcoal, cursive;
   }
 
@@ -29,7 +33,7 @@ body {
   }
 }
 
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -41,32 +45,21 @@ body {
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.task-add__row {
   display: flex;
+  margin-top: 20px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+.task-add__label {
+  display: block;
 }
 
-li,
-h3 {
-  list-style: none;
-}
-
-input,
-button {
-  outline: none;
-}
-
-button {
+.button {
   background: none;
   border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
-  font-family: Lato, sans-serif;
   cursor: pointer;
 
   &:hover {
@@ -75,19 +68,18 @@ button {
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+.task-add__header,
+.task-todo__header,
+.task-complete__header {
   color: var(--font-color);
   font-weight: 700;
   font-size: 15px;
   border-bottom: 2px solid var(--font-color);
   padding: 30px 0 10px;
-  margin: 0;
   text-transform: uppercase;
 }
 
 input[type="text"] {
-  margin: 0;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
@@ -95,22 +87,11 @@ input[type="text"] {
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
-  font-family: Lato, sans-serif;
   color: #888;
 
   &:focus {
     color: var(--font-color);
   }
-}
-
-/* New Task */
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
-
-input#new-task {
-  width: 318px;
 }
 
 /* Task list */
@@ -122,10 +103,6 @@ li {
   justify-content: space-between;
   align-items: center;
 
-  & > * {
-    vertical-align: middle;
-  }
-
   & > input[type="checkbox"] {
     margin: 0 10px;
   }
@@ -136,13 +113,9 @@ li {
     font-size: 18px;
     width: 226px;
   }
-
-  & > input[type="text"] {
-    width: 226px;
-  }
 }
 
-button.delete img {
+.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
@@ -166,7 +139,6 @@ ul li input[type=text] {
 ul li.editMode {
   input[type=text] {
     display: inline-block;
-    width: 224px;
   }
 
   label {
