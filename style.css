@@ -13,7 +13,7 @@
 .aaa-img {
   width: 100%;
 }
-.aaa .more_inf {
+.aaa .more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -35,7 +35,7 @@
 .task-row-wrapper {
   display: flex;
 }
-#incompleteTasks,
+#incomplete-tasks,
 #completed-tasks {
   margin: 0;
   padding: 0px;
@@ -142,11 +142,11 @@
   display: none;
 }
 
-.editMode .input-data[type="text"] {
+.edit-mode .input-data[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.editMode .mark {
+.edit-mode .mark {
   display: none;
 }
