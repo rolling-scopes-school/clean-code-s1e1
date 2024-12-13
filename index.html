@@ -1,19 +1,59 @@
+<!DOCTYPE html>
 <html>
-<HEAD><title>Todo App</title>
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
-</HEAD>
-<body>
-<div class="aaa"><img src="./eisenhower-matrix.jpg"><a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a></div>
-<div class="centered-main-page-element"><p id='topSectionForAddingElementToList'><label for="new-task">Add Item</label><div class="task-row-wrapper"><input id='new-task'class="task" type="text"><button>Add</button></div>
-</p><h3>Todo</h3>
-<ul id='incompleteTasks'>
-<li><input type='checkbox'><label class="task">Pay Bills</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-<li class="editMode"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class='edit'>Save</button><button class="delete"><img src="./remove.svg"></button></li>
-</ul><h3>Completed</h3><ul id="completed-tasks"><li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
-</li>
-</ul>
-</div>
-<script type="text/javascript" SRC="app.js"></script>
+<head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+</head>
+<body class="body">
+    <div class="header">
+        <img class="header__image" src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
+        <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">
+            Want more details?
+        </a>
+    </div>
+    <div class="main">
+        <p id="topSectionForAddingElementToList" class="new-task">
+            <label for="new-task" class="new-task__label">Add Item</label>
+            <div class="task-row">
+                <input id="new-task" class="new-task__input input--text" type="text">
+                <button class="button">Add</button>
+            </div>
+        </p>
+        <h3 class="heading">Todo</h3>
+        <ul id="incompleteTasks" class="list">
+            <li class="list__item">
+                <input class="list__item-checkbox" type="checkbox">
+                <label class="list__item-label">Pay Bills</label>
+                <input type="text" class="list__item-input input--text">
+                <button class="button button--edit">Edit</button>
+                <button class="button button--delete">
+                    <img src="./remove.svg" alt="Delete">
+                </button>
+            </li>
+            <li class="list__item list__item--edit-mode">
+                <input class="list__item-checkbox" type="checkbox">
+                <label class="list__item-label">Go Shopping</label>
+                <input type="text" value="Go Shopping" class="list__item-input input--text">
+                <button class="button button--edit">Save</button>
+                <button class="button button--delete">
+                    <img src="./remove.svg" alt="Delete">
+                </button>
+            </li>
+        </ul>
+        <h3 class="heading">Completed</h3>
+        <ul id="completed-tasks" class="list list--completed">
+            <li class="list__item">
+                <input class="list__item-checkbox" type="checkbox" checked>
+                <label class="list__item-label">See the Doctor</label>
+                <input type="text" class="list__item-input input--text">
+                <button class="button button--edit">Edit</button>
+                <button class="button button--delete">
+                    <img src="./remove.svg" alt="Delete">
+                </button>
+            </li>
+        </ul>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
