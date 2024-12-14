@@ -48,11 +48,13 @@
   padding: 0px;
 }
 
-.todo__list-item, .todo__header {
+.todo__list-item,
+.todo__header {
   list-style: none;
 }
 
-.todo__input,.todo__button{
+.todo__input,
+.todo__button{
   outline: none;
 }
 
@@ -158,15 +160,12 @@
 }
 
 /* Edit Task */
-.todo__task-input {
+.todo__task-input,
+.todo__label--editing {
   display: none;
 }
 
 .todo__task--editing {
   display: inline-block;
   width: 224px;
-}
-
-.todo__label--editing {
-  display: none;
 }
