@@ -162,11 +162,11 @@
   display: none;
 }
 
-.todo__task--editmode {
+.todo__task--edit-mode {
   display: inline-block;
   width: 224px;
 }
 
-.todo__task-name--editmode {
+.todo__task-name--edit-mode {
   display: none;
 }
