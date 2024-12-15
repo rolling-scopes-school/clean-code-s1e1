@@ -20,7 +20,7 @@ body {
   .aaa { text-align: center;
   }
 }
-.centered-main-page-element {
+.page-element {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -30,7 +30,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.row-wrapper {
   display: flex;
 }
 ul {
