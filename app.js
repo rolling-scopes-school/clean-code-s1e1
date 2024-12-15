@@ -45,6 +45,7 @@
 
   deleteButton.className="delete";
   deleteButtonImg.src="./remove.svg";
+  deleteButtonImg.alt = "delete todo item button";
   deleteButton.appendChild(deleteButtonImg);
   
   
