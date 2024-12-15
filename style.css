@@ -18,8 +18,9 @@ body {
 }
 
 @media (max-width:768px) {
-.body__image-container { text-align: center;
-}
+  .body__image-container { 
+    text-align: center;
+  }
 }
 .body__content-container {
     display: block;
