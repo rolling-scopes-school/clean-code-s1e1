@@ -4,24 +4,24 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.body__image-container {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.body__image-container img {
     width: 100%;
 }
-.aaa .more_inf {
+.body__image-container .more_inf {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.body__image-container { text-align: center;
 }
 }
-.centered-main-page-element {
+.body__content-container {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -116,7 +116,7 @@ li > label {
     width: 226px;
 }
 li >    input[type="text"] {
-    width: 226px
+    width: 226px;
 }
 button.delete img {
     height: 2em;
@@ -129,13 +129,13 @@ button.delete img:hover {
 
 /* Completed */
 ul#completed-tasks label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 ul li input[type=text] {
-    display:none
+    display:none;
 }
 
 ul li.editMode input[type=text] {
