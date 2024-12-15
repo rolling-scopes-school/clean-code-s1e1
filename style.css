@@ -73,7 +73,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -85,7 +85,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+input:focus {
   color: #333;
 }
 /* New Task */
@@ -108,7 +108,7 @@ li {
 li > * {
   vertical-align: middle;
 }
-li > input[type="checkbox"] {
+li > input {
   margin: 0 10px;
 }
 li > label {
@@ -117,7 +117,7 @@ li > label {
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+li > input {
   width: 226px
 }
 button.task_delete img {
@@ -134,10 +134,10 @@ ul#completed-tasks label {
   color: #888;
 }
 /* Edit Task */
-ul li input[type=text] {
+ul li input {
   display:none
 }
-ul li.task_todo input[type=text] {
+ul li.task_todo input {
   display:inline-block;
   width:224px
 }
