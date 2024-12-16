@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Todo App</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
-  </head>
-  <body>
-    <header class="header">
-      <img class="header__img" src="./eisenhower-matrix.jpg" alt="how to range your tasks by importance">
-      <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </header>
-    <main class="TODO">
+
+<head>
+  <title>Todo App</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+</head>
+
+<body>
+  <header class="header">
+    <figure>
+      <img class="header__img" src="./eisenhower-matrix.jpg" alt="matrix-eisenhower">
+    </figure>
+    <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  </header>
+  <main class="TODO">
+    <section>
       <form class="form-addtask">
         <label for="new-task" class="label label_new-task">Add Item</label>
         <div class="task-row-wrapper">
@@ -18,6 +23,8 @@
           <button class="button">Add</button>
         </div>
       </form>
+    </section>
+    <section>
       <h3>Todo</h3>
       <form class="form-output">
         <ul class="incompleted-tasks list">
@@ -47,7 +54,9 @@
           </li>
         </ul>
       </form>
-    </main>
-    <script src="app.js"></script>
-  </body>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+
 </html>
