@@ -3,7 +3,7 @@
 
 //Problem: User interaction does not provide the correct results.
 //Solution: Add interactivity so the user can manage daily tasks.
-//Break things down into smaller steps and take each step at a time.
+//Break things down into smaller step  s and take each step at a time.
 
 
 // Event handling, user interaction is what starts the code execution.
@@ -85,7 +85,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".list-item__edit-button");
-    var containsClass=listItem.classList.contains(".list-item");
+    var containsClass=listItem.classList.contains("list-item--edit-mode");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -99,7 +99,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("list-item");
+    listItem.classList.toggle("list-item--edit-mode");
 };
 
 
@@ -156,8 +156,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("list-item__edit-button");
-    var deleteButton=taskListItem.querySelector("list-item__delete-button");
+    var editButton=taskListItem.querySelector(".list-item__edit-button");
+    var deleteButton=taskListItem.querySelector(".list-item__delete-button");
 
 
     //Bind editTask to edit button.
