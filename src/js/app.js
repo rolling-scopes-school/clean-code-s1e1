@@ -1,6 +1,6 @@
 var taskInput = document.getElementById("new-task");
 var addButton = document.getElementsByTagName("button")[0];
-var incompleteTaskHolder = document.getElementById("incompleteTasks");
+var incompleteTaskHolder = document.getElementById("incomplete-tasks");
 var completedTasksHolder = document.getElementById("completed-tasks");
 
 //New task list item
@@ -14,13 +14,13 @@ var createNewTaskElement = function (taskString) {
   var deleteButtonImg = document.createElement("img");
 
   label.innerText = taskString;
-  label.className = 'task';
+  label.className = 'todo__task';
   checkBox.type = "checkbox";
   editInput.type = "text";
-  editInput.className = "task";
+  editInput.className = "todo__task";
   editButton.innerText = "Edit";
-  editButton.className = "edit";
-  deleteButton.className = "delete";
+  editButton.className = "todo__button--edit";
+  deleteButton.className = "todo__button--delete";
   deleteButtonImg.src = './assets/remove.svg';
 
   deleteButton.appendChild(deleteButtonImg);
@@ -48,8 +48,8 @@ var editTask=function() {
   var listItem = this.parentNode;
   var editInput = listItem.querySelector('input[type=text]');
   var label = listItem.querySelector("label");
-  var editBtn = listItem.querySelector(".edit");
-  var containsClass = listItem.classList.contains("editMode");
+  var editBtn = listItem.querySelector(".todo__button--edit");
+  var containsClass = listItem.classList.contains("todo__item--edit-mode");
 
   if(containsClass) {
     label.innerText = editInput.value;
@@ -58,7 +58,7 @@ var editTask=function() {
     editInput.value = label.innerText;
     editBtn.innerText = "Save";
   }
-  listItem.classList.toggle("editMode");
+  listItem.classList.toggle("todo__item--edit-mode");
 };
 
 //Delete task.
@@ -91,8 +91,8 @@ addButton.addEventListener("click", addTask);
 
 var bindTaskEvents = function(taskListItem,checkBoxEventHandler){
   var checkBox = taskListItem.querySelector("input[type=checkbox]");
-  var editButton = taskListItem.querySelector("button.edit");
-  var deleteButton = taskListItem.querySelector("button.delete");
+  var editButton = taskListItem.querySelector("button.todo__button--edit");
+  var deleteButton = taskListItem.querySelector("button.todo__button--delete");
 
   editButton.onclick = editTask;
   deleteButton.onclick = deleteTask;

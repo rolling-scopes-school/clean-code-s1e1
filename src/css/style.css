@@ -4,35 +4,49 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.aaa {
+.info {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.info img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.info .info__button {
   font-family: "fantasy", cursive;
 }
 
-.centered-main-page-element {
+.todo__wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.todo__input--task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.todo__task-row {
   display: flex;
+}
+
+.todo__button--add{
+  background: #c8edc8;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 1px dashed #b7b7b7;
+  transition: border-color .5s ease-in-out, background .5s ease-in-out, color .5s ease-in-out;
+}
+
+.todo__button--add:hover{
+  border: 1px dashed #000000;
+  background: #89c789;
+  transition: border-color .5s ease-in-out, background .5s ease-in-out, color .5s ease-in-out;
 }
 
 ul {
@@ -127,13 +141,13 @@ li > input[type="text"] {
   width: 226px
 }
 
-button.delete img {
+button.todo__button--delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+button.todo__button--delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -146,17 +160,17 @@ ul li input[type=text] {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+ul li.todo__item--edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+ul li.todo__item--edit-mode label {
   display: none;
 }
 
 @media (max-width:768px) {
-  .aaa { 
+  .info { 
     text-align: center;
   }
 }
