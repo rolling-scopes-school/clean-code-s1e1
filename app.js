@@ -89,7 +89,7 @@ const deleteTask = function () {
 // Mark task as completed
 const taskCompleted = function () {
     const listItem = this.parentNode;
-    listItem.classList.add("task-list__item--completed");
+    listItem.querySelector(".task__label").classList.add("task-list__item--completed");
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 };
