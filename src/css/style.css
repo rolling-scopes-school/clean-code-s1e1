@@ -36,6 +36,30 @@ body {
 }
 
 .todo__button--add{
+  background: #c7d8ff;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 1px dashed #b7b7b7;
+  transition: border-color .5s ease-in-out, background .5s ease-in-out, color .5s ease-in-out;
+}
+
+.button_save{
+  background: #e2e988;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 1px dashed #b7b7b7;
+  transition: border-color .5s ease-in-out, background .5s ease-in-out, color .5s ease-in-out;
+}
+
+.todo__list--incomplete{
+  background: #ededc8;
+}
+
+.todo__list--completed{
+  background: #ebffdf;
+}
+
+.button_edit{
   background: #c8edc8;
   margin-left: 20px;
   border-radius: 5px;
@@ -45,7 +69,7 @@ body {
 
 .todo__button--add:hover{
   border: 1px dashed #000000;
-  background: #89c789;
+  background: #9fb7ef;
   transition: border-color .5s ease-in-out, background .5s ease-in-out, color .5s ease-in-out;
 }
 
@@ -134,7 +158,7 @@ li > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  width: 226px;
+  width: 248px;
 }
 
 li > input[type="text"] {

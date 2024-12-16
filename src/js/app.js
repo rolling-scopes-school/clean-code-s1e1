@@ -19,7 +19,7 @@ var createNewTaskElement = function (taskString) {
   editInput.type = "text";
   editInput.className = "todo__task";
   editButton.innerText = "Edit";
-  editButton.className = "todo__button--edit";
+  editButton.className = "todo__button--edit button_edit";
   deleteButton.className = "todo__button--delete";
   deleteButtonImg.src = './assets/remove.svg';
 
@@ -54,9 +54,13 @@ var editTask=function() {
   if(containsClass) {
     label.innerText = editInput.value;
     editBtn.innerText = "Edit";
+    editBtn.classList.remove("button_save");
+    editBtn.classList.add("button_edit");
   }else{
     editInput.value = label.innerText;
     editBtn.innerText = "Save";
+    editBtn.classList.add("button_save");
+    editBtn.classList.remove("button_edit");
   }
   listItem.classList.toggle("todo__item--edit-mode");
 };
