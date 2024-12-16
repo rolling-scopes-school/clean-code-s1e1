@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Todo App</title>
+  <title class="header__title">Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" 
     rel="stylesheet" 
     type="text/css"
@@ -19,40 +19,40 @@
     <p id="main__section">
       <label class="main__new-task" for="new-task">Add Item</label>
       <div class="main__row-task">
-        <input id="new-task" class="main__task" type="text">
-        <button>Add</button>
+        <input id="new-task" class="main__task main__row-input-id main__text" type="text">
+        <button class="btn">Add</button>
       </div>
     </p>
-    <h3>Todo</h3>
-    <ul id="main__incomplete">
-      <li>
-        <input type="checkbox">
+    <h3 class="title">Todo</h3>
+    <ul class="main__list" id="main__incomplete">
+      <li class="main__list-item">
+        <input class="checkbox" type="checkbox">
         <label class="main__task">Pay Bills</label>
-        <input type="text" class="main__task">
+        <input type="text" class="main__text main__task main__task-text">
         <button class="btn-edit btn">Edit</button>
         <button class="btn-delete btn">
-          <img src="./remove.svg">
+          <img class="img__delete" src="./remove.svg">
         </button>
       </li>
-      <li class="editMode">
-        <input type="checkbox">
-        <label class="main__task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="main__task">
+      <li class="editMode main__list-item">
+        <input class="checkbox" type="checkbox">
+        <label class="main__task main__task-edit__label">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="main__text main__task main__task-text main__task-text__edit">
         <button class="btn-edit btn">Save</button>
         <button class="btn-delete btn">
-          <img src="./remove.svg">
+          <img class="img__delete" src="./remove.svg">
         </button>
       </li>
     </ul>
-    <h3>Completed</h3>
-    <ul id="main__completed-tasks">
-      <li>
-        <input type="checkbox" checked>
+    <h3 class="title">Completed</h3>
+    <ul class="main__list" id="main__completed-tasks">
+      <li class="main__list-item">
+        <input class="checkbox" type="checkbox" checked>
         <label class="main__task main__task__completed-tasks">See the Doctor</label>
-        <input type="text" class="main__task">
+        <input type="text" class="main__text main__task main__task-text">
         <button class="btn-edit btn">Edit</button>
         <button class="btn-delete btn">
-          <img src="./remove.svg">
+          <img class="img__delete" src="./remove.svg">
         </button>
       </li>
     </ul>
