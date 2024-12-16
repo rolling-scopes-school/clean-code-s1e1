@@ -1,13 +1,13 @@
 /*use tag selectors for intentionally resetting the default styles*/
 ul {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 li {
-  list-style:none;
+  list-style: none;
 }
 input,button{
-  outline:none;
+  outline:  none;
   border: none;
   background-color: transparent;
 }
@@ -141,10 +141,10 @@ input,button{
 
 /* Edit Task */
 .task input[type=text] {
-  display:none
+  display: none
 }
 
 .input-task {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
