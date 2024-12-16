@@ -7,12 +7,12 @@ body {
 
 li, 
 h3 {
-  list-style:none;
+  list-style: none;
 }
 
 input,
 button{
-  outline:none;
+  outline: none;
 }
 
 .matrix {
@@ -68,7 +68,7 @@ button{
 }
 
 .todos__list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
@@ -116,7 +116,7 @@ button{
 }
 
 #new-task.todos__new-todo {
-  min-width: 318px;
+  width: 318px;
 }
 
 /* Task list */
@@ -149,20 +149,20 @@ button{
 
 /* Completed */
 #completed .todos__task-label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .todos__task-input {
-  display:none
+  display: none;
 }
 
 .todos__item {
   &--edit {
     .todos__task-input {
-      display:inline-block;
-      width:224px
+      display: inline-block;
+      width: 224px;
     }
   }
   
@@ -171,7 +171,7 @@ button{
 .todos__item {
   &--edit {
     .todos__task-label {
-      display:none;
+      display: none;
     }
   }
 }
