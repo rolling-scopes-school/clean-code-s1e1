@@ -40,7 +40,7 @@ body {
 .task_input {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 
@@ -152,7 +152,7 @@ button:hover {
 
 
 .todo_item >    .task_input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 
@@ -175,12 +175,12 @@ button.btn_delete img:hover {
 
 /* Edit Task */
 .todo_ul .todo_item .task_input[type=text] {
-  display: none
+  display: none;
 }
 
 .todo_ul .todo_item.editMode .task_input[type=text] {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .todo_ul .todo_item.editMode .task_input {
