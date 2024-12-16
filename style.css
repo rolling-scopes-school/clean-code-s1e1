@@ -130,18 +130,18 @@ input#new-task {
 
 /* Completed */
 .ul#completed-tasks label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 .ul .list-item input[type=text] {
-    display: none
+    display: none;
 }
 
 .ul .list-item.editMode input[type=text] {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .ul .list-item.editMode label {
