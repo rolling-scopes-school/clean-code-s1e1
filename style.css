@@ -4,15 +4,18 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .banner {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .banner img {
   width: 100%;
 }
+
 .banner_link {
   font-family: fantasy, cursive;
 }
@@ -22,37 +25,46 @@
     text-align: center;
   }
 }
+
 .tasks {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task_input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
+
 .task_checkbox {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
   }
+
 .task_add {
   display: flex;
 }
+
 #incomplete_tasks {
   margin: 0;
   padding: 0px;
   list-style: none;
 }
+
 #completed_tasks {
     margin: 0;
     padding: 0px;
     list-style: none;
-  }
-.task_input,button{
+}
+
+.task_input,
+button{
   outline: none;
 }
+
 .button {
   background: none;
   border: 0px;
@@ -62,9 +74,11 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .button:hover {
   color: #3a3A3a;
 }
+
 /* Heading */
 .task_title {
   color: #333;
@@ -75,6 +89,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .task_input {
   margin: 0;
   font-size: 18px;
@@ -87,17 +102,21 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .task_input:focus {
   color: #333;
 }
+
 /* New Task */
 .add_task {
   display: block;
   margin: 0 0 20px;
 }
+
 .task_input {
   width: 318px;
 }
+
 /* Task list */
 .task_item {
   overflow: hidden;
@@ -108,42 +127,52 @@
   align-items: center;
   vertical-align: middle;
 }
+
 .task_item > * {
   vertical-align: middle;
 }
+
 li > input {
   margin: 0 10px;
 }
+
 li > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 li > input {
   width: 226px;
 }
+
 button.task_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 button.task_delete img:hover {
   transform: rotateZ(0);
 }
+
 /* Completed */
 ul#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
+
 /* Edit Task */
 ul li input {
   display: none;
 }
+
 ul li.task_todo input {
   display: inline-block;
   width: 224px;
 }
+
 ul li.task_todo label {
   display: none;
 }
