@@ -39,7 +39,8 @@ body {
   margin:0;
   padding: 0px;
 }
-.main__list-item, .header__title {
+.main__list-item, 
+.header__title {
   list-style:none;
 }
 input, .btn {
