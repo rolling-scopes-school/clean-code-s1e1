@@ -158,20 +158,13 @@ button{
   display: none;
 }
 
-.todos__item {
-  &--edit {
-    .todos__task-input {
-      display: inline-block;
-      width: 224px;
-    }
+.todos__item--edit {
+  .todos__task-input {
+    display: inline-block;
+    width: 224px;
   }
-  
-}
 
-.todos__item {
-  &--edit {
-    .todos__task-label {
-      display: none;
-    }
+  .todos__task-label {
+    display: none;
   }
 }
