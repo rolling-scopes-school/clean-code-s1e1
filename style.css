@@ -6,7 +6,7 @@ body {
 }
 
 
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
@@ -14,38 +14,38 @@ body {
 }
 
 
-.aaa img {
+.header_img {
   width: 100%;
 }
 
 
-.aaa .more_inf {
+.header .header_link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .aaa { 
+  .header { 
     text-align: center;
   }
 
 }
 
 
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
    margin: 0 auto 0;
 }
 
 
-.task {
+.task_input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
 
 
-.task-row-wrapper {
+.add_content {
   display: flex;
 }
 
@@ -157,14 +157,14 @@ li >    input[type="text"] {
 }
 
 
-button.delete img {
+button.btn_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
 
-button.delete img:hover {
+button.btn_delete img:hover {
   transform: rotateZ(0);
 }
 
