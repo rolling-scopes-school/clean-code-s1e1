@@ -7,14 +7,19 @@ var doneList = document.getElementById("done-list"); // Список завер�
 // Функция для создания новой задачи
 var createTask = function(taskText) {
     var listItem = document.createElement("li");
+    listItem.className = 'li';
 
     // Создаем элементы для задачи
     var checkBox = document.createElement("input");
+    checkBox.className = 'input'
     var label = document.createElement("label");
+    label.className = 'label';
     var editInput = document.createElement("input");
+    editInput.className = 'editInput'
     var editBtn = document.createElement("button");
     var deleteBtn = document.createElement("button");
     var deleteImg = document.createElement("img");
+    deleteImg.className = 'img'
 
     label.innerText = taskText;
     label.className = 'task-label';
@@ -24,9 +29,9 @@ var createTask = function(taskText) {
     editInput.className = "input-field";
 
     editBtn.innerText = "Edit";
-    editBtn.className = "edit-btn";
+    editBtn.classList.add("button", "edit-btn");
 
-    deleteBtn.className = "delete-btn";
+    deleteBtn.classList.add("button", "delete-btn");
     deleteImg.src = './remove.svg';
     deleteBtn.appendChild(deleteImg);
 
