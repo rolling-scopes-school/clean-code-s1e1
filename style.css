@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.header img {
+.header__img {
   width: 100%;
 }
-.header .header__info {
+.header__info {
   font-family: fantasy, cursive;
 }
 
@@ -129,7 +129,7 @@ button.btn-delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+.main__task__completed-tasks {
   text-decoration: line-through;
   color: #888;
 }

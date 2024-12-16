@@ -10,21 +10,21 @@
 </head>
 <body>
   <div class="header">
-    <img src="./eisenhower-matrix.jpg">
+    <img class="header__img" src="./eisenhower-matrix.jpg">
     <a class="header__info" href="https://goal-life.com/page/method/matrix-eisenhower">
       Want more details?
     </a>
   </div>
   <div class="main">
-    <p id="topSectionForAddingElementToList">
+    <p id="main__section">
       <label class="main__new-task" for="new-task">Add Item</label>
       <div class="main__row-task">
-        <input id="new-task"class="main__task" type="text">
+        <input id="new-task" class="main__task" type="text">
         <button>Add</button>
       </div>
     </p>
     <h3>Todo</h3>
-    <ul id="incompleteTasks">
+    <ul id="main__incomplete">
       <li>
         <input type="checkbox">
         <label class="main__task">Pay Bills</label>
@@ -45,10 +45,10 @@
       </li>
     </ul>
     <h3>Completed</h3>
-    <ul id="completed-tasks">
+    <ul id="main__completed-tasks">
       <li>
         <input type="checkbox" checked>
-        <label class="main__task">See the Doctor</label>
+        <label class="main__task main__task__completed-tasks">See the Doctor</label>
         <input type="text" class="main__task">
         <button class="btn-edit btn">Edit</button>
         <button class="btn-delete btn">
