@@ -30,7 +30,7 @@ body {
 .main__task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .main__row-task {
   display: flex;
@@ -117,7 +117,7 @@ input, .btn{
   width: 226px;
 }
 .main__task {
-  width: 226px
+  width: 226px;
 }
 .img__delete {
   height: 2em;
@@ -136,12 +136,12 @@ input, .btn{
 
 /* Edit Task */
 .main__task-text {
-  display:none
+  display:none;
 }
 
 .main__task-text__edit {
   display:inline-block;
-  width:224px
+  width:224px;
 }
 
 .main__task-edit__label {
