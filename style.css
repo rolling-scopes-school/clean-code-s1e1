@@ -62,7 +62,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="new-task"] {
+.label_new-task {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -72,7 +72,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -84,16 +84,16 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.input:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.label_new-task {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+input_new-task {
   width: 318px;
 }
 
@@ -112,18 +112,18 @@ li>* {
   vertical-align: middle;
 }
 
-li>input[type="checkbox"] {
+.input_check{
   margin: 0 10px;
 }
 
-li>label {
+.list__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li>input[type="text"] {
+.list__input {
   width: 226px
 }
 

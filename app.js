@@ -27,9 +27,10 @@ let createNewTaskElement = function (taskString) {
   let deleteButtonImg = document.createElement("img");//DELETE BUTTON IMAGE
   //LABEL SETTINGS
   label.innerText = taskString;
-  label.className = "task";
+  label.className = "label list__label";
   //INPUT SETTINGS
   checkBox.type = "checkbox";
+  checkBox.className = "input_check";
   editInput.type = "text";
   editInput.className = "input";
   //EDIT BUTTON SETTINGS
