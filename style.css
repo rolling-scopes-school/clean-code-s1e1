@@ -4,24 +4,24 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.info-block {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.info-block img {
   width: 100%;
 }
-.aaa .more_inf {
+.info-block .info-block-link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .aaa { text-align: center;
+  .info-block { text-align: center;
   }
 }
-.centered-main-page-element {
+.form-wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -31,7 +31,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.add-item-block {
   display: flex;
 }
 ul {
