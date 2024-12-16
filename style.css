@@ -85,17 +85,17 @@ button{
     color: #3a3a3a;
   }
 }
-.todos__btn--delete {
-  img {
-    height: 2em;
-    transform: rotateZ(45deg);
-    transition: transform 200ms ease-in;
 
-    &:hover {
-      transform: rotateZ(0);
-    }
+.todos__btn--delete .todos__img-delete {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+
+  &:hover {
+    transform: rotateZ(0);
   }
 }
+
 
 /* Heading */
 .todos__title,
