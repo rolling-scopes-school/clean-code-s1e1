@@ -2,7 +2,7 @@
 .page {
   background-color: #f8f8f8;
   color: #333;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .header {
@@ -34,6 +34,7 @@
 
 .input-group {
   display: flex;
+margin-top: 20px;
 }
 
 .input-field {
@@ -83,8 +84,9 @@ ul {
   text-transform: uppercase;
 }
 
+
 #new-task-input[type="text"] {
-  margin: 0;
+  margin-top: 0;
   font-size: 18px;
   line-height: 18px;
   height: 21px;

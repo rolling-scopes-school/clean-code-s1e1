@@ -7,28 +7,38 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen">
   </head>
-  <body>
-    <div class="header">
-      <img  src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
-      <a class="details-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="task-container">
-      <p id="task-form">
-        <label for="new-task-input">Add Task</label>
-        <div class="input-group">
-          <input id="new-task-input" class="input-field" type="text" placeholder="Enter a new task">
-          <button class="add-btn button">Add</button>
-        </div>
-      </p>
-      <h3>Todo</h3>
-      <ul id="todo-list">
-        <!-- Task items will be added dynamically here -->
-      </ul>
-      <h3 class="h3" >Completed</h3>
-      <ul id="done-list">
-        <!-- Completed tasks will be added here -->
-      </ul>
-    </div>
-    <script src="app.js" defer></script>
+  <body class="page">
+    <header>
+      <div class="header">
+        <img src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
+        <a class="details-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      </div>
+    </header>
+    <main>
+      <div class="task-container">
+        <section>
+          <p class="h3" id="task-form">
+            <label  for="new-task-input">Add Task</label>
+            <div class="input-group">
+              <input id="new-task-input" class="input-field" type="text" placeholder="Enter a new task">
+              <button class="add-btn button">Add</button>
+            </div>
+          </p>
+        </section>
+        <section>
+          <h3 class="h3">Todo</h3>
+          <ul id="todo-list">
+            <!-- Task items will be added dynamically here -->
+          </ul>
+        </section>
+        <section>
+          <h3 class="h3">Completed</h3>
+          <ul id="done-list">
+            <!-- Completed tasks will be added here -->
+          </ul>
+        </section>
+      </div>
+      <script src="app.js" defer></script>
+    </main>
   </body>
 </html>
