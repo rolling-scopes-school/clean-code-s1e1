@@ -7,7 +7,6 @@ body {
 .aaa {
     width: 500px;
     margin: 0 auto;
-    display: block;
     text-align: right;
 }
 .aaa img {
@@ -18,8 +17,9 @@ body {
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
-}
+    .aaa {
+        text-align: center;
+    }
 }
 .centered-main-page-element {
     display: block;
@@ -129,7 +129,7 @@ button.delete img:hover {
 
 /* Completed */
 ul#completed-tasks label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
