@@ -169,7 +169,7 @@ button.btn_delete img:hover {
 }
 
 /* Completed */
-.todo_ul#completed-tasks .task_input {
+.todo_ul .task_input {
   text-decoration: line-through;
   color: #888;
 }
