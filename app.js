@@ -1,41 +1,41 @@
 // Получаем элементы
 var taskInput = document.getElementById("new-task-input");
-var addButton = document.querySelector(".add-task-btn"); // Кнопка добавления
-var incompleteTaskHolder = document.getElementById("incomplete-task-list"); // Список незавершенных задач
-var completedTasksHolder = document.getElementById("completed-task-list"); // Список завершенных задач
+var addBtn = document.querySelector(".add-btn"); // Кнопка добавления
+var todoList = document.getElementById("todo-list"); // Список незавершенных задач
+var doneList = document.getElementById("done-list"); // Список завершенных задач
 
 // Функция для создания новой задачи
-var createNewTaskElement = function(taskString) {
+var createTask = function(taskText) {
     var listItem = document.createElement("li");
 
     // Создаем элементы для задачи
     var checkBox = document.createElement("input");
     var label = document.createElement("label");
     var editInput = document.createElement("input");
-    var editButton = document.createElement("button");
-    var deleteButton = document.createElement("button");
-    var deleteButtonImg = document.createElement("img");
+    var editBtn = document.createElement("button");
+    var deleteBtn = document.createElement("button");
+    var deleteImg = document.createElement("img");
 
-    label.innerText = taskString;
+    label.innerText = taskText;
     label.className = 'task-label';
 
     checkBox.type = "checkbox";
     editInput.type = "text";
-    editInput.className = "task-input-field";
+    editInput.className = "input-field";
 
-    editButton.innerText = "Edit";
-    editButton.className = "edit-task-btn";
+    editBtn.innerText = "Edit";
+    editBtn.className = "edit-btn";
 
-    deleteButton.className = "delete-task-btn";
-    deleteButtonImg.src = './remove.svg';
-    deleteButton.appendChild(deleteButtonImg);
+    deleteBtn.className = "delete-btn";
+    deleteImg.src = './remove.svg';
+    deleteBtn.appendChild(deleteImg);
 
     // Добавляем элементы в li
     listItem.appendChild(checkBox);
     listItem.appendChild(label);
     listItem.appendChild(editInput);
-    listItem.appendChild(editButton);
-    listItem.appendChild(deleteButton);
+    listItem.appendChild(editBtn);
+    listItem.appendChild(deleteBtn);
     return listItem;
 }
 
@@ -44,9 +44,9 @@ var addTask = function() {
     console.log("Add Task...");
     if (!taskInput.value) return; // Если поле пустое, не добавляем задачу
 
-    var listItem = createNewTaskElement(taskInput.value);
-    incompleteTaskHolder.appendChild(listItem); // Добавляем задачу в список незавершенных
-    bindTaskEvents(listItem, taskCompleted);
+    var listItem = createTask(taskInput.value);
+    todoList.appendChild(listItem); // Добавляем задачу в список незавершенных
+    bindTaskEvents(listItem, markTaskDone);
 
     taskInput.value = ""; // Очищаем поле ввода
 }
@@ -58,10 +58,10 @@ var editTask = function() {
 
     var editInput = listItem.querySelector('input[type=text]');
     var label = listItem.querySelector("label");
-    var editBtn = listItem.querySelector(".edit-task-btn");
-    var containsClass = listItem.classList.contains("editMode");
+    var editBtn = listItem.querySelector(".edit-btn");
+    var isEditing = listItem.classList.contains("editMode");
 
-    if (containsClass) {
+    if (isEditing) {
         label.innerText = editInput.value;
         editBtn.innerText = "Edit";
     } else {
@@ -81,19 +81,19 @@ var deleteTask = function() {
 }
 
 // Пометить задачу как завершенную
-var taskCompleted = function() {
+var markTaskDone = function() {
     console.log("Complete Task...");
     var listItem = this.parentNode;
-    completedTasksHolder.appendChild(listItem); // Перемещаем в завершенные задачи
-    bindTaskEvents(listItem, taskIncomplete);
+    doneList.appendChild(listItem); // Перемещаем в завершенные задачи
+    bindTaskEvents(listItem, markTaskTodo);
 }
 
 // Пометить задачу как незавершенную
-var taskIncomplete = function() {
+var markTaskTodo = function() {
     console.log("Incomplete Task...");
     var listItem = this.parentNode;
-    incompleteTaskHolder.appendChild(listItem); // Перемещаем в незавершенные задачи
-    bindTaskEvents(listItem, taskCompleted);
+    todoList.appendChild(listItem); // Перемещаем в незавершенные задачи
+    bindTaskEvents(listItem, markTaskDone);
 }
 
 // Функция для привязки событий к кнопкам
@@ -101,23 +101,23 @@ var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
     console.log("Bind list item events");
 
     var checkBox = taskListItem.querySelector("input[type=checkbox]");
-    var editButton = taskListItem.querySelector("button.edit-task-btn");
-    var deleteButton = taskListItem.querySelector("button.delete-task-btn");
+    var editBtn = taskListItem.querySelector("button.edit-btn");
+    var deleteBtn = taskListItem.querySelector("button.delete-btn");
 
-    editButton.onclick = editTask;
-    deleteButton.onclick = deleteTask;
+    editBtn.onclick = editTask;
+    deleteBtn.onclick = deleteTask;
     checkBox.onchange = checkBoxEventHandler;
 }
 
 // Привязать события ко всем элементам на странице
-for (var i = 0; i < incompleteTaskHolder.children.length; i++) {
-    bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted);
+for (var i = 0; i < todoList.children.length; i++) {
+    bindTaskEvents(todoList.children[i], markTaskDone);
 }
 
-for (var i = 0; i < completedTasksHolder.children.length; i++) {
-    bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
+for (var i = 0; i < doneList.children.length; i++) {
+    bindTaskEvents(doneList.children[i], markTaskTodo);
 }
 
 // Обработчик события клика по кнопке добавления задачи
-addButton.onclick = addTask;
-addButton.addEventListener("click", addTask);
+addBtn.onclick = addTask;
+addBtn.addEventListener("click", addTask);

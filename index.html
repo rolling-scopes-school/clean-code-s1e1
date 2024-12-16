@@ -8,24 +8,24 @@
     <link rel="stylesheet" href="style.css" media="screen">
   </head>
   <body>
-    <div class="header-container">
+    <div class="header">
       <img src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
       <a class="details-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
-    <div class="task-section">
-      <p id="task-addition-form">
+    <div class="task-container">
+      <p id="task-form">
         <label for="new-task-input">Add Task</label>
         <div class="input-group">
-          <input id="new-task-input" class="task-input-field" type="text" placeholder="Enter a new task">
-          <button class="add-task-btn">Add</button>
+          <input id="new-task-input" class="input-field" type="text" placeholder="Enter a new task">
+          <button class="add-btn">Add</button>
         </div>
       </p>
       <h3>Todo</h3>
-      <ul id="incomplete-task-list">
+      <ul id="todo-list">
         <!-- Task items will be added dynamically here -->
       </ul>
       <h3>Completed</h3>
-      <ul id="completed-task-list">
+      <ul id="done-list">
         <!-- Completed tasks will be added here -->
       </ul>
     </div>
