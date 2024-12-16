@@ -34,7 +34,7 @@ body {
 .main {
   display: block;
   width: 500px;
-   margin: 0 auto 0;
+  margin: 0 auto 0;
 }
 
 
@@ -50,18 +50,18 @@ body {
 }
 
 
-ul {
+.todo_ul {
   margin:0;
   padding: 0px;
 }
 
 
-li, h3 {
+.todo_item, .h3_todo {
   list-style:none;
 }
 
 
-input,button{
+.task_input,button{
   outline:none;
 }
 
@@ -83,8 +83,8 @@ button:hover {
 
 
 /* Heading */
-h3,
-label[for="new-task"] {
+.h3_todo,
+.task_input[for="new-task"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -95,7 +95,7 @@ label[for="new-task"] {
 }
 
 
-input[type="text"] {
+.task_input[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -109,23 +109,23 @@ input[type="text"] {
 }
 
 
-input[type="text"]:focus {
+.task_input[type="text"]:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.task_input[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
 
 
-input#new-task {
+.task_input#new-task {
   width: 318px;
 }
 
 /* Task list */
-li {
+.todo_item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -135,16 +135,16 @@ li {
 }
 
 
-li > * {
+.todo_item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.todo_item > .task_input[type="checkbox"] {
   margin: 0 10px;
 }
 
 
-li > label {
+.todo_item > .task_input {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -152,7 +152,7 @@ li > label {
 }
 
 
-li >    input[type="text"] {
+.todo_item >    .task_input[type="text"] {
   width: 226px
 }
 
@@ -169,21 +169,21 @@ button.btn_delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+.todo_ul#completed-tasks .task_input {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.todo_ul .todo_item .task_input[type=text] {
   display:none
 }
 
-ul li.editMode input[type=text] {
+.todo_ul .todo_item.editMode .task_input[type=text] {
   display:inline-block;
- width:224px
+  width:224px
 }
 
-ul li.editMode label {
+.todo_ul .todo_item.editMode .task_input {
   display:none;
 }
