@@ -70,7 +70,6 @@ let editTask = function () {
   console.log("Edit Task...");
   console.log("Change 'edit' to 'save'");
 
-
   let listItem = this.parentNode;
 
   let editInput = listItem.querySelector("input[type=text]");
@@ -91,6 +90,7 @@ let editTask = function () {
 
   //toggle .editmode on the parent.
   listItem.classList.toggle("edit-mode");
+  editInput.focus();
 };
 
 
