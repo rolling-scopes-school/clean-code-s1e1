@@ -14,9 +14,6 @@ const createNewTaskElement = (taskString) => {
     const deleteButton=document.createElement("button");
     const deleteButtonImg=document.createElement("img");
 
-    label.innerText = taskString;
-    label.className = "task";
-
     checkBox.type = "checkbox";
     editInput.type = "text";
     editInput.className = "task";
