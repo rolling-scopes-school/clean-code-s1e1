@@ -32,13 +32,13 @@ body {
   margin: 0 auto 0;
 }
 
-.task {
+.add__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.input__wrapper {
   display: flex;
 }
 
@@ -143,13 +143,13 @@ li > input[type="text"] {
   width: 226px;
 }
 |
-button.delete img {
+button.list-item__delete-button img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+button.list-item__delete-button img:hover {
   transform: rotateZ(0);
 }
 
