@@ -3,29 +3,36 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 li {
   list-style: none;
 }
-input,button{
+
+input,
+button{
   outline:  none;
   border: none;
   background-color: transparent;
 }
+
 /* Basic Style */
 .page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .matrix {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .matrix .matrix-img {
   width: 100%;
 }
+
 .matrix .matrix-inform {
   font-family: fantasy, cursive;
 }
@@ -35,16 +42,13 @@ input,button{
     text-align: center;
   }
 }
-.centered-main-page-element {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
-}
+
 .input-task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
+
 .task-row-wrapper {
   display: flex;
 }
@@ -58,6 +62,7 @@ input,button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .confirm-task:hover {
   color: #3a3a3a;
 }
@@ -66,6 +71,7 @@ input,button{
   width: 500px;
   margin: auto;
 }
+
 /* Heading */
 .task-header {
   color: #333;
@@ -76,6 +82,7 @@ input,button{
   margin: 0 0 10px;
   text-transform: uppercase;
 }
+
 .input-task {
   margin: 0;
   font-size: 18px;
@@ -89,6 +96,7 @@ input,button{
   color: #888;
   width: 226px;
 }
+
 .input-task:focus {
   color: #333;
 }
@@ -108,7 +116,6 @@ input,button{
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,6 +124,7 @@ input,button{
 .check-task {
   margin: 0 10px;
 }
+
 .label-task {
   padding-left: 10px;
   box-sizing: border-box;
@@ -129,6 +137,7 @@ input,button{
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .delete-img:hover {
   transform: rotateZ(0);
 }
