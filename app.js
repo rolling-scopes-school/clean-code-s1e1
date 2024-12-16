@@ -25,6 +25,8 @@ let createNewTaskElement = function (taskString) {
   //button.delete
   let deleteButton = document.createElement("button");//DELETE BUTTON
   let deleteButtonImg = document.createElement("img");//DELETE BUTTON IMAGE
+  //LI
+  listItem.className = 'list__item';
   //LABEL SETTINGS
   label.innerText = taskString;
   label.className = "label list__label";
@@ -35,9 +37,9 @@ let createNewTaskElement = function (taskString) {
   editInput.className = "input";
   //EDIT BUTTON SETTINGS
   editButton.innerText = "Edit";
-  editButton.className = "edit";
+  editButton.className = "edit button";
   //DELETE BUTTON
-  deleteButton.className = "delete";
+  deleteButton.className = "delete button";
   deleteButtonImg.src = "./remove.svg";
   deleteButtonImg.className = "button__image";
   deleteButton.appendChild(deleteButtonImg);
