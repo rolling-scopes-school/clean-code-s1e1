@@ -7,6 +7,7 @@
 </head>
 
 <body>
+<div class="page">
 <section class="banner">
   <img src="./eisenhower-matrix.jpg" alt="picture of the Eisenhower matrix">
   <a class="banner_link" 
@@ -15,47 +16,47 @@
 </section>
 <main class="tasks">
   <section id="top_section_for_adding_element_to_list">
-    <label for="new_task">Add Item</label>
+    <label for="new_task" class="task_title add_task">Add Item</label>
     <form class="task_add">
       <input id="new_task" class="task_input" type="text">
-      <button>Add</button>
+      <button class="button">Add</button>
     </form>
   </section>
-  <h3>Todo</h3>
+  <h3 class="task_title">Todo</h3>
   <ul id="incomplete_tasks">
-    <li>
+    <li class="task_item">
       <input type="checkbox">
       <label class="task_checkbox">Pay Bills</label>
       <input type="text" class="task_input">
-      <button class="task_edit">Edit</button>
-      <button class="task_delete">
+      <button class="task_edit button">Edit</button>
+      <button class="task_delete button">
         <img src="./remove.svg" alt="button delete">
       </button>
     </li>
-    <li class="task_todo">
+    <li class="task_todo task_item">
       <input type="checkbox">
         <label class="task_checkbox">Go Shopping</label>
       <input type="text" value="go shopping" class="task_input">
-      <button class="task_edit">Save</button>
-      <button class="task_delete">
+      <button class="task_edit button">Save</button>
+      <button class="task_delete button">
         <img src="./remove.svg" alt="button delete">
       </button>
     </li>
   </ul>
-  <h3>Completed</h3>
+  <h3 class="task_title">Completed</h3>
   <ul id="completed_tasks">
-    <li>
+    <li class="task_item">
       <input type="checkbox" checked>
       <label class="task_checkbox">See the Doctor</label>
       <input type="text" class="task_input">
-      <button class="task_edit">Edit</button>
-      <button class="task_delete">
+      <button class="task_edit button">Edit</button>
+      <button class="task_delete button">
         <img src="./remove.svg" alt="button delete">
       </button>
     </li>
   </ul>
 </main>
-
+</div>
 
 <script src="app.js"></script>
 </body>
