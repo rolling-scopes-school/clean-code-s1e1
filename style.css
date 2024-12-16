@@ -93,7 +93,7 @@ h3,
   display: block;
   margin: 0 0 20px;
 }
-input_new-task {
+.input_new-task {
   width: 318px;
 }
 
@@ -143,16 +143,15 @@ li>* {
   color: #888;
 }
 
-/* Edit Task */
-ul li input[type=text] {
+ul li input[type="text"] {
   display: none
 }
 
-ul li.editMode input[type="text"] {
+ul li.edit-mode input[type="text"] {
   display: inline-block;
   width: 224px
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
   display: none;
 }
