@@ -51,7 +51,9 @@ ul {
   list-style: none;
 }
 
-.input, .editInput, .button {
+.input, 
+.editInput, 
+.button {
   outline: none;
 }
 
@@ -166,3 +168,4 @@ ul {
  .li.edit .label {
   display: none;
 }
+
