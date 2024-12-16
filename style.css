@@ -46,7 +46,7 @@
 .task__create {
     width: 56%;
     display: inline-block;
-    flex-grow: 1;
+    flex-grow: 1
 }
 
 /* Task List */
@@ -66,7 +66,7 @@
 }
 
 .task__checkbox {
-    margin: 0 10px;
+    margin: 0;
 }
 
 .task__label {
@@ -90,7 +90,9 @@
     width: 226px;
 }
 
-.task__input--edit {
+.task__input--edit,
+ .task__input--save,
+ .task__input--delete {
     width: 224px;
 }
 
@@ -156,7 +158,7 @@
     width: 224px;
 }
 
-.task-list__item--editMode .task__label {
+.task-list__label--editMode{
     display: none;
 }
 
