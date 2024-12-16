@@ -18,7 +18,8 @@
 }
 
 @media (max-width:768px) {
-  .info-block { text-align: center;
+  .info-block {
+    text-align: center;
   }
 }
 .form-wrapper {
