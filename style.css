@@ -4,50 +4,72 @@
   color: #333;
   font-family: "Lato", sans-serif;
 }
-.header-block {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.header-block img {
+.header__img {
   width: 100%;
 }
-.more-inf {
+.header__more-inf{
   font-family: "fantasy", cursive;
 }
 
 @media (max-width: 768px) {
-  .header-block { 
+  .header { 
     text-align: center;
   }
 }
-.main-block {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+#add-item-section__form__task-row__input,
+.to-do-section__label,
+.to-do-section__input,
+.completed-section__label,
+.completed-section__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.add-item-section__form__task-row {
   display: flex;
 }
-ul {
+#to-do-section__form__incomplete-tasks,
+#completed-section__form__completed-tasks {
   margin: 0;
   padding: 0px;
 }
-li, 
-h3 {
+.to-do-section__task,
+.to-do-section__task--edit-mode,
+.completed-section__task,
+.to-do-section__header, 
+.completed-section__header {
   list-style: none;
 }
-input,
-button{
+#add-item-section__form__task-row__input,
+.to-do-section__input,
+.completed-section__input,
+#add-item-section__form__task-row__button,
+.to-do-section__button,
+.to-do-section__button--edit,
+.to-do-section__button--delete,
+.completed-section__button,
+.completed-section__button--edit,
+.completed-section__button--delete {
   outline: none;
 }
-button {
+#add-item-section__form__task-row__button,
+.to-do-section__button,
+.to-do-section__button--edit,
+.to-do-section__button--delete,
+.completed-section__button,
+.completed-section__button--edit,
+.completed-section__button--delete {
   background: none;
   border: 0px;
   color: #888;
@@ -56,12 +78,19 @@ button {
   font-family: "Lato", sans-serif;
   cursor: pointer;
 }
-button:hover {
+#add-item-section__form__task-row__button:hover,
+.to-do-section__button:hover,
+.to-do-section__button--edit:hover,
+.to-do-section__button--delete:hover,
+.completed-section__button:hover,
+.completed-section__button--edit:hover,
+.completed-section__button--delete:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.to-do-section__header,
+.completed-section__header,
+#add-item-section__form__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -70,7 +99,9 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+#add-item-section__form__task-row__input,
+.to-do-section__input,
+.completed-section__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -82,21 +113,25 @@ input[type="text"] {
   font-family: "Lato", sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+#add-item-section__form__task-row__input:focus,
+.to-do-section__input:focus,
+.completed-section__input:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+#add-item-section__form__label{
   display: block;
   margin: 0 0 20px;
 }
-#new-task {
+#add-item-section__form__label {
   width: 318px;
 }
 
 /* Task list */
-li {
+.to-do-section__task,
+.to-do-section__task--edit-mode,
+.completed-section__task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -104,47 +139,55 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.to-do-section__task,
+.to-do-section__task--edit-mode,
+.completed-section__task {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.to-do-section__checkbox,
+.completed-section__checkbox {
   margin: 0 10px;
 }
-li > label {
+.to-do-section__label,
+.completed-section__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+.to-do-section__input,
+.completed-section__input {
   width: 226px;
 }
-.delete img {
+.to-do-section__img,
+.completed-section__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.to-do-section__img:hover,
+.completed-section__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks label {
+.completed-section__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+.to-do-section__input,
+.completed-section__input {
  display: none;
 }
 
-.edit-mode input[type="text"] {
+.to-do-section__input--edit-mode {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.to-do-section__input--edit-mode {
   display: none;
 }
