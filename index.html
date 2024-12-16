@@ -11,7 +11,7 @@
   charset="utf-8"
 >
 </head>
-<body>
+<body class="page">
   <header class="header">
     <img src="./eisenhower-matrix.jpg" alt="matrix-img">
     <a 
@@ -31,7 +31,7 @@
           class="task" 
           type="text"
         >
-        <button>Add</button>
+        <button class="btn">Add</button>
       </div>
     </section>
     <h3>Todo</h3>
@@ -46,9 +46,11 @@
           class="task"
         >
         <button 
+          class="btn"
           class="edit">Edit
         </button>
-        <button class="delete">
+        <button
+          class="delete btn">
             <img src="./remove.svg" alt="remove-img">
         </button>
       </li>
@@ -65,10 +67,12 @@
           class="task"
         >
         <button 
+          class="btn"
           class="edit">
           Save
         </button>
-        <button class="delete">
+        <button 
+          class="delete btn">
             <img src="./remove.svg" alt="remove-img">
         </button>
       </li>
@@ -83,9 +87,11 @@
           See the Doctor
         </label>
         <input type="text" class="task">
-        <button class="edit">Edit</button>
-        <button class="delete">
-          <img src="./remove.svg" alt="remove-img">
+        <button
+          class="btn edit">Edit</button>
+        <button
+         class="delete btn">
+            <img src="./remove.svg" alt="remove-img">
         </button>
       </li>
     </ul>
