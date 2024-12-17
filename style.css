@@ -39,10 +39,12 @@ ul {
   margin: 0;
   padding: 0;
 }
-li, .task-list-header {
+li,
+.task-list-header {
   list-style: none;
 }
-input, button {
+input,
+button {
   outline: none;
 }
 button {
