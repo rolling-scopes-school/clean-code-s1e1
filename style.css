@@ -77,8 +77,7 @@ body {
 	color: #3a3a3a;
 }
 /* Heading */
-.tasks__title,
-.tasks__label[for='new-task'] {
+.tasks__title {
 	color: #333;
 	font-weight: 700;
 	font-size: 15px;
@@ -106,7 +105,7 @@ body {
 }
 
 /* New Task */
-.tasks__label[for='new-task'] {
+.tasks__title--new-task {
 	display: block;
 	margin: 0 0 20px;
 }
