@@ -4,7 +4,6 @@
 // Problem: User interaction does not provide the correct results.
 // Solution: Add interactivity so the user can manage daily tasks.
 // Break things down into smaller steps and take each step at a time.
-
 // Elements
 const taskInput = document.getElementById("new-task-input");
 const addButton = document.querySelector("button"); // First button
