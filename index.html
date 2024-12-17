@@ -2,17 +2,30 @@
 <html>
 <HEAD>
     <title>Todo App</title>
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css" MEDIA="screen" charset="utf-8">
+    <link
+     href='https://fonts.googleapis.com/css?family=Lato:300,400,700'
+     rel='stylesheet'>
+    <link
+     rel="stylesheet"
+     href="style.css"
+      MEDIA="screen"
+       charset="utf-8">
 </HEAD>
 
 <body>
-    <div class="intro">
-        <img class="intro__image" alt="main picture" src="./eisenhower-matrix.jpg">
-        <a class='intro__link' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
+    <header class="header">
+        <div class="intro">
+        <img 
+        class="intro__image"
+        alt="main picture"
+        src="./eisenhower-matrix.jpg">
+        <a
+         class='intro__link' 
+         href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+        </div>
+    </header>
 
-    <div class="todo">
+    <section class="todo">
         <div class="todo__header" id='topSectionForAddingElementToList'>
             <label class="todo__label" for="new-task">Add Item</label>
             <div class="todo__input-wrapper">
@@ -30,7 +43,10 @@
                     <input type="text" class="todo__input">
                     <button class="todo__button todo__button--edit">Edit</button>
                     <button class="todo__button todo__button--delete">
-                        <img class="todo__icon" alt="Delete Task" src="./remove.svg">
+                        <img
+                         class="todo__icon"
+                          alt="Delete Task"
+                           src="./remove.svg">
                     </button>
                 </li>
                 <li class="todo__item todo__item--edit-mode editMode">
@@ -39,7 +55,10 @@
                     <input type="text" value="Go Shopping" class="todo__input">
                     <button class='todo__button todo__button--edit'>Save</button>
                     <button class="todo__button todo__button--delete">
-                        <img class="todo__icon" alt="Delete Task" src="./remove.svg">
+                        <img
+                         class="todo__icon"
+                          alt="Delete Task"
+                           src="./remove.svg">
                     </button>
                 </li>
             </ul>
@@ -54,13 +73,16 @@
                     <input type="text" class="todo__input">
                     <button class="todo__button todo__button--edit">Edit</button>
                     <button class="todo__button todo__button--delete">
-                        <img class="todo__icon" alt="Delete Task" src="./remove.svg">
+                        <img
+                         class="todo__icon"
+                          alt="Delete Task"
+                           src="./remove.svg">
                     </button>
                 </li>
             </ul>
         </div>
         <!-- End Todo container  -->
-    </div>
+    </section>
     <script type="text/javascript" SRC="app.js"></script>
 </body>
 
