@@ -4,6 +4,7 @@ body {
 	color: #333;
 	font-family: Lato, sans-serif;
 }
+
 .more {
 	width: 500px;
 	margin: 0 auto;
@@ -23,24 +24,29 @@ body {
 		text-align: center;
 	}
 }
+
 .tasks {
 	display: block;
 	width: 500px;
 	margin: 0 auto 0;
 }
+
 .tasks__input,
 .tasks__label {
 	width: 56%;
 	display: inline-block;
 	flex-grow: 1;
 }
+
 .tasks__row {
 	display: flex;
 }
+
 .tasks__list {
 	margin: 0;
 	padding: 0px;
 }
+
 .tasks__item,
 .tasks__title {
 	list-style: none;
@@ -52,6 +58,7 @@ body {
 .tasks__button-delete {
 	outline: none;
 }
+
 .tasks__button,
 .tasks__button-edit,
 .tasks__button-delete {
@@ -63,6 +70,7 @@ body {
 	font-family: Lato, sans-serif;
 	cursor: pointer;
 }
+
 .tasks__button:hover,
 .tasks__button-edit:hover,
 .tasks__button-delete:hover {
@@ -92,6 +100,7 @@ body {
 	font-family: Lato, sans-serif;
 	color: #888;
 }
+
 .tasks__input[type='text']:focus {
 	color: #333;
 }
