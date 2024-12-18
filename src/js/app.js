@@ -14,14 +14,16 @@ var createNewTaskElement = function (taskString) {
   var deleteButtonImg = document.createElement("img");
 
   label.innerText = taskString;
-  label.className = 'todo__task';
+  label.className = 'todo__task todo__task--label';
   checkBox.type = "checkbox";
   editInput.type = "text";
-  editInput.className = "todo__task";
+  editInput.className = "todo__task todo__task--input";
   editButton.innerText = "Edit";
-  editButton.className = "todo__button--edit button_edit";
-  deleteButton.className = "todo__button--delete";
+  editButton.className = "todo__button todo__button--edit button_edit";
+  deleteButton.className = "todo__button todo__button--delete";
   deleteButtonImg.src = './assets/remove.svg';
+  deleteButtonImg.alt = 'remove';
+  listItem.classList.add('todo__item');
 
   deleteButton.appendChild(deleteButtonImg);
   listItem.appendChild(checkBox);

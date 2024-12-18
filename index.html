@@ -14,35 +14,35 @@
     </div>
     <div class="todo__wrapper">
       <div id="todo__top-section">
-        <label for="new-task" class="todo__label">Add Item</label>
+        <label for="new-task" class="todo__label todo__label_top">Add Item</label>
         <div class="todo__task-row">
           <input id="new-task" class="todo__input todo__input--task" type="text">
           <button class="todo__button todo__button--add">Add</button>
         </div>
       </div>
-      <h3>Todo</h3>
+      <h3 class="todo__title">Todo</h3>
       <ul class="todo__list todo__list--incomplete" id="incomplete-tasks">
         <li class="todo__item">
           <input type="checkbox" class="todo__checkbox">
-          <label class="todo__task">Pay Bills</label>
-          <input type="text" class="todo__task">
+          <label class="todo__task todo__task--label">Pay Bills</label>
+          <input type="text" class="todo__task todo__task--input">
           <button class="todo__button todo__button--edit button_edit">Edit</button>
           <button class="todo__button todo__button--delete" class="delete"><img src="./assets/remove.svg" alt="remove"></button>
         </li>
         <li class="todo__item todo__item--edit-mode">
           <input type="checkbox" class="todo__checkbox">
-          <label class="todo__task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="todo__task">
+          <label class="todo__task todo__task--label">Go Shopping</label>
+          <input type="text" class="todo__task todo__task--input" value="Go Shopping">
           <button class="todo__button todo__button--edit button_save">Save</button>
           <button class="todo__button todo__button--delete" class="delete"><img src="./assets/remove.svg" alt="remove"></button>
         </li>
       </ul>
-      <h3>Completed</h3>
+      <h3 class="todo__title">Completed</h3>
       <ul class="todo__list todo__list--completed" id="completed-tasks">
         <li class="todo__item">
           <input type="checkbox" class="todo__checkbox" checked>
-          <label class="todo__task">See the Doctor</label>
-          <input type="text" class="todo__task">
+          <label class="todo__task todo__task--label">See the Doctor</label>
+          <input type="text" class="todo__task todo__task--input">
           <button class="todo__button todo__button--edit button_edit">Edit</button>
           <button class="todo__button todo__button--delete" class="delete"><img src="./assets/remove.svg" alt="remove"></button>
         </li>
