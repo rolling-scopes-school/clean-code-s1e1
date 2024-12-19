@@ -16,6 +16,7 @@ var createNewTaskElement = function (taskString) {
   label.innerText = taskString;
   label.className = 'todo__task todo__task--label';
   checkBox.type = "checkbox";
+  checkBox.classList.add("todo__checkbox");
   editInput.type = "text";
   editInput.className = "todo__task todo__task--input";
   editButton.innerText = "Edit";
