@@ -5,28 +5,35 @@ const incompleteTaskHolder = document.getElementById("incompleteTasks");
 const completedTasksHolder = document.getElementById("completed-tasks");
 
 //New task list item
-const createNewTaskElement=function(taskString){
+const createNewTaskElement = function (taskString) {
   const listItem = document.createElement("li");
+  listItem.className = "task-list__item";
+
   const checkBox = document.createElement("input");
+  checkBox.type = "checkbox";
+  checkBox.className = "task__checkbox";
+
   const label = document.createElement("label");
+  label.innerText = taskString;
+  label.className = "task__label";
+
   const editInput = document.createElement("input");
+  editInput.type = "text";
+  editInput.className = "task__input task__input--edit";
+
   const editButton = document.createElement("button");
+  editButton.innerText = "Edit";
+  editButton.className = "task__button task__button--edit";
+  editButton.setAttribute("aria-label", "Edit task");
+
   const deleteButton = document.createElement("button");
+  deleteButton.className = "task__button task__button--delete";
+  deleteButton.setAttribute("aria-label", "Delete task");
+
   const deleteButtonImg = document.createElement("img");
-
-  label.innerText=taskString;
-  label.className="task__label";
-
-  checkBox.type="checkbox";
-  editInput.className="task__checkbox";
-
-  editButton.innerText="Edit"; 
-  editButton.className="task__button task__button--edit";
-
-  deleteButton.className="task__button task__button--delete";
-  deleteButtonImg.src='./remove.svg';
-  deleteButtonImg.alt="Delete";
-  deleteButtonImg.className="task__button-icon task__button-icon--delete";
+  deleteButtonImg.src = "./remove.svg";
+  deleteButtonImg.alt = "Delete";
+  deleteButtonImg.className = "task__button-icon task__button-icon--delete";
   deleteButton.appendChild(deleteButtonImg);
 
   listItem.appendChild(checkBox);
