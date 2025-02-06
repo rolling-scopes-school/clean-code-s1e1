@@ -13,7 +13,8 @@ body {
 .container-matrix img {
     width: 100%;
 }
-.container-matrix .more-inf {
+.container-matrix,
+.more-inf {
     font-family: fantasy, cursive;
 }
 
@@ -39,7 +40,8 @@ ul {
     margin: 0;
     padding: 0px;
 }
-li, h3 {
+li,
+h3 {
     list-style: none;
 }
 input,
