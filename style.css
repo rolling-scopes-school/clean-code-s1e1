@@ -13,11 +13,11 @@ body {
 .container-matrix img {
     width: 100%;
 }
-.container-matrix .more_inf {
+.container-matrix .more-inf {
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 .container-matrix { 
     text-align: center;
 }
