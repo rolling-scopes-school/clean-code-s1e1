@@ -98,7 +98,6 @@ li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eeeeee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -138,12 +137,10 @@ ul#completed-tasks label {
 ul li input[type=text] {
     display:none
 }
-
 ul li.editMode input[type=text] {
     display:inline-block;
     width:224px;
 }
-
 ul li.editMode label {
     display:none;
 }
