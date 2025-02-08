@@ -140,10 +140,11 @@ li > input[type="text"] {
 ul li input[type=text] {
     display: none;
 }
-ul .edit-mode input[type=text] {
-    display: inline-block;
+ul li.editMode input[type=text] {
+    display: block;
+    /* display: inline-block; */
     width: 224px;
 }
-ul .edit-mode label {
+ul li.editMode label {
     display: none;
 }
