@@ -18,8 +18,9 @@ body {
 }
 
 @media (max-width:768px) {
-.more-inf-box { text-align: center;
-}
+    .more-inf-box {
+        text-align: center;
+    }
 }
 .main {
     display: block;
@@ -115,7 +116,7 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+li > input[type="text"] {
     width: 226px
 }
 button.delete img {
