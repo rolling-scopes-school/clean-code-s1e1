@@ -1,39 +1,8 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
-}
-.aaa {
-  width: 500px;
-  margin: 0 auto;
-  display: block;
-  text-align: right;
-}
-.aaa img {
-  width: 100%;
-}
-.aaa .more_inf {
-  font-family: fantasy, cursive;
-}
-
-@media (max-width:768px) {
-  .aaa { 
-    text-align: center;
-  }
-}
-.centered-main-page-element {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
-}
-.task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1
-}
-.task-row-wrapper {
-  display: flex;
 }
 ul {
   margin:0;
@@ -57,6 +26,42 @@ button {
 button:hover {
   color: #3a3A3a;
 }
+li > * {
+  vertical-align: middle;
+}
+.header {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+.header img {
+  width: 100%;
+}
+.header .more_inf {
+  font-family: fantasy, cursive;
+}
+
+@media (max-width:768px) {
+  .header { 
+    text-align: center;
+  }
+}
+.main-wrapper {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+.task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1
+}
+.task-row-wrapper {
+  display: flex;
+}
+
+
 /* Heading */
 h3,
 label[for='new-task'] {
@@ -100,9 +105,7 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
-  vertical-align: middle;
-}
+
 li > input[type="checkbox"] {
   margin: 0 10px;
 }
