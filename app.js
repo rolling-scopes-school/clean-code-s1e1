@@ -31,7 +31,8 @@ var createNewTaskElement=function(taskString){
     //button.delete
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
-
+    listItem.className = 'todo-item';
+    
     label.innerText=taskString;
     label.className='task';
 
