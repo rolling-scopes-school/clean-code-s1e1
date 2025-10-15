@@ -13,7 +13,7 @@ h3 {
   list-style: none;
 }
 input,
-button{
+button {
   outline: none;
 }
 button {
@@ -37,10 +37,10 @@ li > * {
   display: block;
   text-align: right;
 }
-.header img {
+img {
   width: 100%;
 }
-.header .more-inf {
+.more-inf {
   font-family: fantasy, cursive;
 }
 
