@@ -28,7 +28,7 @@ button {
 button:hover {
   color: #3a3A3a;
 }
-li > * {
+.todo-item > * {
   vertical-align: middle;
 }
 .header {
@@ -72,7 +72,7 @@ img {
   margin: 0 0 20px;
   text-transform: uppercase;
 }
-input[type="text"] {
+.input-task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -84,7 +84,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.input-task:focus {
   color: #333;
 }
 /* New Task */
@@ -109,7 +109,7 @@ input#new-task {
   font-size: 18px;
   width: 226px;
 }
-.todo-item > input[type="text"] {
+.todo-item > .input-task {
   width: 226px
 }
 
@@ -127,11 +127,11 @@ ul#completed-tasks label {
   color: #888;
 }
 /* Edit Task */
-ul .todo-item input[type=text] {
+ul .todo-item .input-task {
   display: none
 }
 
-ul .edit-mode input[type=text] {
+ul .edit-mode .input-task {
   display: inline-block;
   width: 224px
 }
