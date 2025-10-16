@@ -34,10 +34,11 @@ var createNewTaskElement=function(taskString){
     listItem.className='todo-item';
 
     label.innerText=taskString;
-    label.className='todo-task';
+    label.className='todo-task completed-label edit-mode-label';
 
     //Each elements, needs appending
-    checkBox.type="checkbox";
+    checkBox.type = "checkbox";
+    checkBox.className = 'todo-item-checkbox';
     editInput.type="text";
     editInput.className="todo-task input-task";
 
@@ -45,7 +46,8 @@ var createNewTaskElement=function(taskString){
     editButton.className="btn edit";
 
     deleteButton.className="btn delete";
-    deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.src = './remove.svg';
+    deleteButtonImg.className = 'remove-icon';
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -92,10 +94,12 @@ var editTask=function(){
 
         //switch to .editmode
         //label becomes the inputs value.
-        label.innerText=editInput.value;
+        label.innerText = editInput.value;
+        // label.classList.add('edit-mode-label');
         editBtn.innerText="Edit";
     }else{
-        editInput.value=label.innerText;
+        editInput.value = label.innerText;
+        // label.classList.remove('edit-mode-label');
         editBtn.innerText="Save";
     }
 
