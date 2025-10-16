@@ -121,7 +121,7 @@ img {
   transform: rotateZ(0);
 }
 /* Completed */
-.completed-label {
+#completed-tasks .completed-label {
   text-decoration: line-through;
   color: #888;
 }
@@ -133,6 +133,6 @@ img {
   display: inline-block;
   width: 224px
 }
-ul .edit-mode label {
+.edit-mode .edit-mode-label {
   display: none;
 }
