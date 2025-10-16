@@ -7,7 +7,7 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-const taskInput = document.getElementById('new-task') //Add a new task.
+const taskInput = document.getElementById('new-task')
 const addButton = document.getElementsByTagName('button')[0] //first button
 const incompleteTaskHolder = document.getElementById('incompleteTasks') //ul of #incompleteTasks
 const completedTasksHolder = document.getElementById('completed-tasks') //completed-tasks
@@ -15,27 +15,22 @@ const completedTasksHolder = document.getElementById('completed-tasks') //comple
 //New task list item
 function createNewTaskElement(taskString) {
 	const listItem = document.createElement('li')
+	listItem.className = 'task-item'
 
-	//input (checkbox)
-	const checkBox = document.createElement('input') //checkbx
-	//label
-	const label = document.createElement('label') //label
-	//input (text)
-	const editInput = document.createElement('input') //text
-	//button.edit
-	const editButton = document.createElement('button') //edit button
-
-	//button.delete
-	const deleteButton = document.createElement('button') //delete button
-	const deleteButtonImg = document.createElement('img') //delete button image
+	const checkBox = document.createElement('input')
+	const label = document.createElement('label')
+	const editInput = document.createElement('input')
+	const editButton = document.createElement('button')
+	const deleteButton = document.createElement('button')
+	const deleteButtonImg = document.createElement('img')
 
 	label.innerText = taskString
-	label.className = 'task'
+	label.className = 'task-item__label'
 
 	//Each elements, needs appending
 	checkBox.type = 'checkbox'
 	editInput.type = 'text'
-	editInput.className = 'task'
+	editInput.className = 'task-item__input'
 
 	editButton.innerText = 'Edit' //innerText encodes special characters, HTML does not.
 	editButton.className = 'edit'
@@ -98,9 +93,9 @@ function deleteTask() {
 	console.log('Delete Task...')
 
 	const listItem = this.parentNode
-	const ul = listItem.parentNode
-	//Remove the parent list item from the ul.
-	ul.removeChild(listItem)
+	if (listItem) {
+		listItem.remove()
+	}
 }
 
 //Mark task completed
@@ -130,7 +125,6 @@ function ajaxRequest() {
 //The glue to hold it all together.
 
 //Set the click handler to the addTask function.
-addButton.onclick = addTask
 addButton.addEventListener('click', addTask)
 addButton.addEventListener('click', ajaxRequest)
 
@@ -151,15 +145,15 @@ function bindTaskEvents(taskListItem, checkBoxEventHandler) {
 
 //cycle over incompleteTaskHolder ul list items
 //for each list item
-for (let i = 0; i < incompleteTaskHolder.children.length; i++) {
+for (const element of incompleteTaskHolder.children) {
 	//bind events to list items chldren(tasksCompleted)
-	bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted)
+	bindTaskEvents(element, taskCompleted)
 }
 
 //cycle over completedTasksHolder ul list items
-for (let i = 0; i < completedTasksHolder.children.length; i++) {
+for (const element of completedTasksHolder.children) {
 	//bind events to list items chldren(tasksIncompleted)
-	bindTaskEvents(completedTasksHolder.children[i], taskIncomplete)
+	bindTaskEvents(element, taskIncomplete)
 }
 
 // Issues with usability don't get seen until they are in front of a human tester.
