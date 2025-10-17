@@ -121,12 +121,14 @@ li > label {
 li >    input[type="text"] {
     width: 226px;
 }
-.todo__delete-icon {
+.todo__delete-icon,
+.completed__delete-icon {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.todo__delete-icon:hover {
+.todo__delete-icon:hover,
+.completed__delete-icon:hover {
     transform: rotateZ(0);
 }
 
