@@ -161,16 +161,16 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 
 
     //Bind editTask to edit button.
-    editButton.onclick=editTask;
+    editButton.onclick = editTask;
     //Bind deleteTask to delete button.
-    deleteButton.onclick=deleteTask;
+    deleteButton.onclick = deleteTask;
     //Bind taskCompleted to checkBoxEventHandler.
-    checkBox.onchange=checkBoxEventHandler;
+    checkBox.onchange = checkBoxEventHandler;
 }
 
 //cycle over incompleteTaskHolder ul list items
 //for each list item
-for (var i=0; i<incompleteTaskHolder.children.length;i++){
+for (var i=0; i<incompleteTaskHolder.children.length; i++){
 
     //bind events to list items chldren(tasksCompleted)
     bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
@@ -180,7 +180,7 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
 
 //cycle over completedTasksHolder ul list items
-for (var i=0; i<completedTasksHolder.children.length;i++){
+for (var i=0; i<completedTasksHolder.children.length; i++){
     //bind events to list items chldren(tasksIncompleted)
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
