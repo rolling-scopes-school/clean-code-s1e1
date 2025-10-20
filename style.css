@@ -124,7 +124,7 @@ input,button{
   width: 226px;
 }
 .main-page__item > .main-page__input {
-  width: 226px
+  width: 226px;
 }
 .main-page__delete img {
   height: 2em;
@@ -137,18 +137,18 @@ input,button{
 
 /* Completed */
 .main-page__list-complete .main-page__label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .main-page__input {
-  display: none
+  display: none;
 }
 
 .main-page__edit-task .main-page__input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .main-page__edit-task .main-page__label {
