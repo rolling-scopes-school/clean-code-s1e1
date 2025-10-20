@@ -17,7 +17,7 @@
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .header { 
         text-align: center;
     }
@@ -36,14 +36,14 @@
     display: flex;
 }
 .task-list {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 .task-item {
-    list-style:none;
+    list-style: none;
 }
 .task-input,.task-checkbox,.button{
-    outline:none;
+    outline: none;
 }
 .button {
     background: none;
@@ -133,14 +133,14 @@ label[for="new-task"] {
 
 /* Edit Task */
 .task-list .task-item .task-input {
-    display:none
+    display: none
 }
 
 .task-list .task-item.edit-mode .task-input {
-    display:inline-block;
+    display: inline-block;
     width:224px
 }
 
 .task-list .task-item.edit-mode .tasklabel {
-    display:none;
+    display: none;
 }
