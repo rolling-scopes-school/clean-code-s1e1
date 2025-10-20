@@ -14,7 +14,8 @@
         >
     </head>
     <body class="page">
-        <div class="header">
+        <header class="header">
+            <h1 class="main-title">TODO</h1>
             <img class="header-image" src="./eisenhower-matrix.jpg">
             <a 
               class="more-info" 
@@ -22,16 +23,18 @@
             >
               Want more details?
             </a>
-        </div>
-        <div class="main">
-            <p>
-                <label class="title new-task-title" for="new-task">Add Item</label>
+        </header>
+        <main class="main">
+            <section>
+                <h2 class="title new-task-title">
+                    <label for="new-task">Add Item</label>
+                </h2>
                 <div class="task-row">
                     <input class="task-input" id="new-task" type="text">
                     <button class="button">Add</button>
                 </div>
-            </p>
-            <h3 class="title">Todo</h3>
+            </section>
+            <h2 class="title">Todo</h2>
             <ul class="task-list" id="todo-tasks">
                 <li class="task-item">
                     <input class="task-checkbox" type="checkbox">
@@ -52,7 +55,7 @@
                     </button>
                 </li>
             </ul>
-            <h3 class="title">Completed</h3>
+            <h2 class="title">Completed</h2>
             <ul class="task-list" id="done-tasks">
                 <li class="task-item">
                     <input class="task-checkbox" type="checkbox" checked>
@@ -64,7 +67,7 @@
                     </button>
                 </li>
             </ul>
-        </div>
+        </main>
         <script src="app.js"></script>
     </body>
 </html>
