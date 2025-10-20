@@ -17,7 +17,7 @@ body {
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .banner { 
     text-align: center;
   }
@@ -38,11 +38,11 @@ body {
   display: flex;
 }
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 input,button{
   outline:none;
@@ -143,14 +143,14 @@ input,button{
 
 /* Edit Task */
 .main-page__input {
-  display:none
+  display: none
 }
 
 .main-page__edit-task .main-page__input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .main-page__edit-task .main-page__label {
-  display:none;
+  display: none;
 }
