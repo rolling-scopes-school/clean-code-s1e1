@@ -21,7 +21,7 @@ body {
 .header { text-align: center;
 }
 }
-.main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -31,7 +31,7 @@ body {
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.task-row {
     display: flex;
 }
 ul {
@@ -128,7 +128,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#done-tasks label {
     text-decoration: line-through
     color: #888;
 }
