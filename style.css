@@ -4,27 +4,32 @@
     color: #333;
     font-family: Lato, sans-serif;
 }
+
 .header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
+
 .header__title {
-  display: none;
+    display: none;
 }
+
 .header__image {
     width: 100%;
 }
+
 .header__more-info {
     font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-    .header { 
+    .header {
         text-align: center;
     }
 }
+
 .main {
     display: block;
     width: 500px;
@@ -33,19 +38,23 @@
 
 /* New Task */
 .new-task {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
+
 .new-task__title {
-  display: block;
-  margin: 0 0 20px;
+    display: block;
+    margin: 0 0 20px;
 }
+
 .new-task__row {
-  display: flex;
-  margin-top: 20px;
+    display: flex;
+    margin-top: 20px;
 }
+
 .new-task__input {
-  width: 318px;
+    width: 318px;
 }
+
 .button {
     background: none;
     border: 0px;
@@ -56,18 +65,21 @@
     outline: none;
     cursor: pointer;
 }
+
 .button:hover {
     color: #3a3a3a;
 }
+
 .button__image {
-  height: 2em;
-  transform: rotateZ(45deg);
-  transition: transform 200ms ease-in;
+    height: 2em;
+    transform: rotateZ(45deg);
+    transition: transform 200ms ease-in;
 }
 
 .button__image:hover {
-  transform: rotateZ(0);
+    transform: rotateZ(0);
 }
+
 /* Heading */
 .title {
     color: #333;
@@ -78,6 +90,7 @@
     margin: 0;
     text-transform: uppercase;
 }
+
 /* Task List */
 .task-list {
     margin: 0;
@@ -99,46 +112,50 @@
 .task-checkbox {
     margin: 0 10px;
 }
+
 .task-label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
+
 .new-task__input,
 .task__input {
-  margin: 0;
-  font-size: 18px;
-  line-height: 18px;
-  height: 21px;
-  padding: 0 9px;
-  border: 1px solid #ddd;
-  background: #fff;
-  border-radius: 6px;
-  font-family: Lato, sans-serif;
-  color: #888;
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 21px;
+    padding: 0 9px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
 }
+
 .new-task__input:focus,
 .task__input:focus {
-  color: #333;
+    color: #333;
 }
+
 .new-task__input,
 .task__input,
 .task__label {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1;
+    width: 56%;
+    display: inline-block;
+    flex-grow: 1;
 }
 
 .new-task__input,
 .task__input,
 .task__checkbox {
-  outline: none;
+    outline: none;
 }
 
 .task__input {
-  display: none;
-  width: 226px;
+    display: none;
+    width: 226px;
 }
 
 /* Completed */
@@ -150,7 +167,7 @@
 /* Edit Task */
 .task_edit .task__input {
     display: inline-block;
-    width:224px;
+    width: 224px;
 }
 
 .task_edit .task__label {
