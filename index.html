@@ -1,19 +1,56 @@
-<html>
-<HEAD><title>Todo App</title>
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
-</HEAD>
-<body>
-<div class="aaa"><img src="./eisenhower-matrix.jpg"><a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a></div>
-<div class="centered-main-page-element"><p id='topSectionForAddingElementToList'><label for="new-task">Add Item</label><div class="task-row-wrapper"><input id='new-task'class="task" type="text"><button>Add</button></div>
-</p><h3>Todo</h3>
-<ul id='incompleteTasks'>
-<li><input type='checkbox'><label class="task">Pay Bills</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-<li class="editMode"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class='edit'>Save</button><button class="delete"><img src="./remove.svg"></button></li>
-</ul><h3>Completed</h3><ul id="completed-tasks"><li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
-</li>
-</ul>
-</div>
-<script type="text/javascript" SRC="app.js"></script>
-</body>
+<!DOCTYPE html><!--добавлен тег-->
+<html lang="en"><!---->
+  <head><!--теги маленькими буквами-->
+    <meta charset="utf-8"><!--добавлена тег с кодировкой-->
+    <title>Todo App</title><!--добавлен отступ-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700"><!--проставлены двойные кавычки, убран тип, добавлен отступ-->
+    <link rel="stylesheet" href="style.css"><!--убран тип и медиа и кодировка, кодировка перенесена в тег мета-->
+  </head>
+  <body>
+    <main><!--добавлен тег-->
+        <h1 class="title">The eisenhower matrix</h1><!--добавлен заголовок уровня h1-->
+        <div class="image-container"><!--добавлен отступ, изменил название класса-->
+            <img src="./eisenhower-matrix.jpg" alt="Matrix image"><!--добавлен отступ, добавлен alt-->
+              <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a><!--добавлен отступ, двойные кавычки-->
+          </div>
+          <div class="centered-main-page-element"><!--добавлен отступ-->
+            <div id="topSectionForAddingElementToList"><!--добавлен отступ, заменены ковычки на двойные, заменил тег на div-->
+              <label for="new-task">Add Item</label>
+                <p class="task-row-wrapper"><!--добавлен отступ, замена тега div на p-->
+                  <input id="new-task" class="task" type="text"><!--добавлен отступ, заменены кавычки на двойные-->
+                    <button>Add</button><!--добавлен отступ-->
+                </p><!--добавлен отступ-->
+            </div><!--добавлен отступ-->
+            <h3>Todo</h3><!--добавлен отступ-->
+              <ul id="incompleteTasks"><!--добавлен отступ, заменены кавычки на двойные-->
+                <li><!--добавлен отступ-->
+                  <input type="checkbox"><!--добавлен отступ, заменены кавычки на двойные-->
+                    <label class="task">Pay Bills</label><!--добавлен отступ-->
+                  <input type="text" class="task"><!--добавлен отступ-->
+                    <button class="edit">Edit</button><!--добавлен отступ-->
+                    <button class="delete"><img src="./remove.svg" alt="Button delete"></button><!--добавлен отступ, добавлен alt-->
+                </li>
+                <li class="editMode"><!--добавлен отступ-->
+                  <input type="checkbox"><!--добавлен отступ-->
+                    <label class="task">Go Shopping</label><!--добавлен отступ-->
+                  <input type="text" value="Go Shopping" class="task"><!--добавлен отступ-->
+                    <button class="edit">Save</button><!--добавлен отступ, заменены кавычки на двойные-->
+                    <button class="delete"><img src="./remove.svg" alt="Button delete"></button><!--добавлен отступ, добавлен alt-->
+                </li><!--добавлен отступ-->
+              </ul><!--добавлен отступ-->
+            <h3>Completed</h3><!--добавлен отступ-->
+              <ul id="completed-tasks"><!--добавлен отступ-->
+                <li><!--добавлен отступ-->
+                  <input type="checkbox" checked><!--добавлен отступ-->
+                  <label class="task">See the Doctor</label><!--добавлен отступ-->
+                  <input type="text" class="task"><!--добавлен отступ-->
+                  <button class="edit">Edit</button><!--добавлен отступ-->
+                  <button class="delete"><img src="./remove.svg" alt="Button delete"></button><!--добавлен отступ, добавлен alt-->
+                </li><!--добавлен отступ-->
+             </ul><!--добавлен отступ-->
+         </div><!--добавлен отступ-->
+    </main>
+
+  <script type="text/javascript" src="app.js"></script><!--добавлен отступ, src на строчные буквы-->
+  </body><!--добавлен отступ-->
 </html>
