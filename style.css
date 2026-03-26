@@ -26,7 +26,10 @@ body {
     width: 500px;
     margin: 0 auto 0;
 }
-.to-do-form__input {
+.to-do-form__input,
+.to-do-list__label,
+.to-do-list__text,
+.to-do-list__input {
     width: 56%;
     display: inline-block;
     flex-grow: 1
