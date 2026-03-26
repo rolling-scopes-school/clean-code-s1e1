@@ -132,7 +132,7 @@ button:hover {
 
 /* Completed */
 .completed-section .to-do-list__label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
